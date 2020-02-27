@@ -47,24 +47,13 @@ RM = I:\JetBrains\ToolBox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Lenovo\Desktop\CSE - 208\.clionProjectToDoOffline"
+CMAKE_SOURCE_DIR = "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Lenovo\Desktop\CSE - 208\.clionProjectToDoOffline\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	I:\JetBrains\ToolBox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	I:\JetBrains\ToolBox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Lenovo\Desktop\CSE - 208\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" "C:\Users\Lenovo\Desktop\CSE - 208\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Lenovo\Desktop\CSE - 208\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -110,32 +110,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named _clionProjectToDoOffline
-
-# Build rule for target.
-_clionProjectToDoOffline: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 _clionProjectToDoOffline
-.PHONY : _clionProjectToDoOffline
-
-# fast build rule for target.
-_clionProjectToDoOffline/fast:
-	$(MAKE) -f CMakeFiles\_clionProjectToDoOffline.dir\build.make CMakeFiles/_clionProjectToDoOffline.dir/build
-.PHONY : _clionProjectToDoOffline/fast
-
-#=============================================================================
-# Target rules for targets named graphOffline
-
-# Build rule for target.
-graphOffline: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 graphOffline
-.PHONY : graphOffline
-
-# fast build rule for target.
-graphOffline/fast:
-	$(MAKE) -f CMakeFiles\graphOffline.dir\build.make CMakeFiles/graphOffline.dir/build
-.PHONY : graphOffline/fast
-
-#=============================================================================
 # Target rules for targets named GraphAdjList
 
 # Build rule for target.
@@ -148,86 +122,72 @@ GraphAdjList/fast:
 	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/build
 .PHONY : GraphAdjList/fast
 
-main.obj: main.cpp.obj
+#=============================================================================
+# Target rules for targets named GraphAdjMatrix
 
-.PHONY : main.obj
+# Build rule for target.
+GraphAdjMatrix: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 GraphAdjMatrix
+.PHONY : GraphAdjMatrix
 
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\_clionProjectToDoOffline.dir\build.make CMakeFiles/_clionProjectToDoOffline.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+# fast build rule for target.
+GraphAdjMatrix/fast:
+	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/build
+.PHONY : GraphAdjMatrix/fast
 
-main.i: main.cpp.i
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj
 
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\_clionProjectToDoOffline.dir\build.make CMakeFiles/_clionProjectToDoOffline.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\_clionProjectToDoOffline.dir\build.make CMakeFiles/_clionProjectToDoOffline.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-offlines/offline-1/GraphAdjList.obj: offlines/offline-1/GraphAdjList.cpp.obj
-
-.PHONY : offlines/offline-1/GraphAdjList.obj
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
 
 # target to build an object file
-offlines/offline-1/GraphAdjList.cpp.obj:
-	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/offlines/offline-1/GraphAdjList.cpp.obj
-.PHONY : offlines/offline-1/GraphAdjList.cpp.obj
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj
 
-offlines/offline-1/GraphAdjList.i: offlines/offline-1/GraphAdjList.cpp.i
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.i: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.i
 
-.PHONY : offlines/offline-1/GraphAdjList.i
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.i
 
 # target to preprocess a source file
-offlines/offline-1/GraphAdjList.cpp.i:
-	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/offlines/offline-1/GraphAdjList.cpp.i
-.PHONY : offlines/offline-1/GraphAdjList.cpp.i
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.i
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.i
 
-offlines/offline-1/GraphAdjList.s: offlines/offline-1/GraphAdjList.cpp.s
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.s: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.s
 
-.PHONY : offlines/offline-1/GraphAdjList.s
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.s
 
 # target to generate assembly for a file
-offlines/offline-1/GraphAdjList.cpp.s:
-	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/offlines/offline-1/GraphAdjList.cpp.s
-.PHONY : offlines/offline-1/GraphAdjList.cpp.s
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.s
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.s
 
-offlines/offline-1/GraphAdjMatrix.obj: offlines/offline-1/GraphAdjMatrix.cpp.obj
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.obj: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.obj
 
-.PHONY : offlines/offline-1/GraphAdjMatrix.obj
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.obj
 
 # target to build an object file
-offlines/offline-1/GraphAdjMatrix.cpp.obj:
-	$(MAKE) -f CMakeFiles\graphOffline.dir\build.make CMakeFiles/graphOffline.dir/offlines/offline-1/GraphAdjMatrix.cpp.obj
-.PHONY : offlines/offline-1/GraphAdjMatrix.cpp.obj
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.obj
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.obj
 
-offlines/offline-1/GraphAdjMatrix.i: offlines/offline-1/GraphAdjMatrix.cpp.i
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.i: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.i
 
-.PHONY : offlines/offline-1/GraphAdjMatrix.i
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.i
 
 # target to preprocess a source file
-offlines/offline-1/GraphAdjMatrix.cpp.i:
-	$(MAKE) -f CMakeFiles\graphOffline.dir\build.make CMakeFiles/graphOffline.dir/offlines/offline-1/GraphAdjMatrix.cpp.i
-.PHONY : offlines/offline-1/GraphAdjMatrix.cpp.i
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.i
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.i
 
-offlines/offline-1/GraphAdjMatrix.s: offlines/offline-1/GraphAdjMatrix.cpp.s
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.s: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.s
 
-.PHONY : offlines/offline-1/GraphAdjMatrix.s
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.s
 
 # target to generate assembly for a file
-offlines/offline-1/GraphAdjMatrix.cpp.s:
-	$(MAKE) -f CMakeFiles\graphOffline.dir\build.make CMakeFiles/graphOffline.dir/offlines/offline-1/GraphAdjMatrix.cpp.s
-.PHONY : offlines/offline-1/GraphAdjMatrix.cpp.s
+47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.s
+.PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.s
 
 # Help Target
 help:
@@ -235,20 +195,16 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... _clionProjectToDoOffline
-	@echo ... graphOffline
 	@echo ... edit_cache
 	@echo ... GraphAdjList
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... offlines/offline-1/GraphAdjList.obj
-	@echo ... offlines/offline-1/GraphAdjList.i
-	@echo ... offlines/offline-1/GraphAdjList.s
-	@echo ... offlines/offline-1/GraphAdjMatrix.obj
-	@echo ... offlines/offline-1/GraphAdjMatrix.i
-	@echo ... offlines/offline-1/GraphAdjMatrix.s
+	@echo ... GraphAdjMatrix
+	@echo ... rebuild_cache
+	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
+	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.i
+	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.s
+	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.obj
+	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.i
+	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.s
 .PHONY : help
 
 

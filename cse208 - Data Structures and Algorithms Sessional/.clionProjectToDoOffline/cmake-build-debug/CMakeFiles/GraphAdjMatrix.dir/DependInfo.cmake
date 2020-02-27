@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Lenovo/Desktop/CSE - 208/.clionProjectToDoOffline/main.cpp" "C:/Users/Lenovo/Desktop/CSE - 208/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/_clionProjectToDoOffline.dir/main.cpp.obj"
+  "D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjMatrix.cpp" "D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/GraphAdjMatrix.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

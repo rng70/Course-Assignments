@@ -196,15 +196,19 @@ public:
     ~Graph();
 
     void setnVertices(int n);
-    void addEdge(int u, int v);
     void removeEdge(int u, int v);
-    bool isEdge(int u, int v);
-    int getDegree(int u, bool out);
     void printAdjVertices(int u);
-    bool hasCommonAdjacent(int u, int v);
-    int getDist(int u, int v);
     void printGraph();
     void bfs(int source); //will run bfs in the graph
+    void dfs(int source); //will run dfs in the graph
+
+    bool addEdge(int u, int v);
+    bool isEdge(int u, int v);
+    bool hasCommonAdjacent(int u, int v);
+
+    int getInDegree(int u);
+    int getOutDegree(int u);
+    int getDist(int u, int v);
 };
 
 Graph::Graph(bool dir) {
