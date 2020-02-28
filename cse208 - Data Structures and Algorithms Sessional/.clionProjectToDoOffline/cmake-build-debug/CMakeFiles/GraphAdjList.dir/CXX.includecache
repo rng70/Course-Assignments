@@ -7,6 +7,14 @@
 #IncludeRegexTransform: 
 
 D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjList.cpp
-bits/stdc++.h
+cstdio
+-
+chrono
+-
+iostream
+-
+fstream
+-
+random
 -
 

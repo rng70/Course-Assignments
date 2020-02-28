@@ -12,7 +12,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="" />
+    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GraphAdjList.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GraphAdjList.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjMatrix.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,13 +41,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools" />
   </component>
   <component name="RunManager" selected="CMake Application.GraphAdjList">
     <configuration name="GraphAdjList" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_clionProjectToDoOffline" TARGET_NAME="GraphAdjList" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_clionProjectToDoOffline" RUN_TARGET_NAME="GraphAdjList">
@@ -72,7 +82,7 @@
       <workItem from="1582697689334" duration="2474000" />
       <workItem from="1582830727139" duration="608000" />
       <workItem from="1582838573979" duration="803000" />
-      <workItem from="1582840512931" duration="10321000" />
+      <workItem from="1582840512931" duration="35428000" />
     </task>
     <servers />
   </component>
@@ -80,41 +90,41 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="588" y="187" key="FileChooserDialogImpl" timestamp="1582660450123">
+    <state x="588" y="187" key="FileChooserDialogImpl" timestamp="1582910717423">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="588" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582660450123" />
-    <state width="489" height="736" key="GridCell.Tab.0.bottom" timestamp="1582871458908">
+    <state x="588" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582910717423" />
+    <state width="450" height="736" key="GridCell.Tab.0.bottom" timestamp="1582910743199">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="489" height="736" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582871458908" />
-    <state width="489" height="736" key="GridCell.Tab.0.center" timestamp="1582871458908">
+    <state width="450" height="736" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582910743199" />
+    <state width="450" height="736" key="GridCell.Tab.0.center" timestamp="1582910743199">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="489" height="736" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1582871458908" />
-    <state width="489" height="736" key="GridCell.Tab.0.left" timestamp="1582871458908">
+    <state width="450" height="736" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1582910743199" />
+    <state width="450" height="736" key="GridCell.Tab.0.left" timestamp="1582910743198">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="489" height="736" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1582871458908" />
-    <state width="489" height="736" key="GridCell.Tab.0.right" timestamp="1582871458908">
+    <state width="450" height="736" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1582910743198" />
+    <state width="450" height="736" key="GridCell.Tab.0.right" timestamp="1582910743199">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="489" height="736" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1582871458908" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1582879081371">
+    <state width="450" height="736" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1582910743199" />
+    <state x="277" y="74" key="SettingsEditor" timestamp="1582910735528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582879081371" />
-    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1582879078807">
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582910735528" />
+    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1582896499319">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864@0.0.1536.864" timestamp="1582879078807" />
+    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864@0.0.1536.864" timestamp="1582896499319" />
     <state x="409" y="146" width="603" height="448" key="recent.locations.popup" timestamp="1582699087666">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="409" y="146" width="603" height="448" key="recent.locations.popup/0.0.1536.864@0.0.1536.864" timestamp="1582699087666" />
-    <state x="46" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1582867645842">
+    <state x="46" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1582901833207">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="46" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1582867645842" />
+    <state x="46" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1582901833207" />
   </component>
 </project>

@@ -6,6 +6,10 @@
 #define GREY 2
 #define BLACK 3
 
+using namespace std;
+
+std::random_device dev;
+std::mt19937 rng(dev());
 
 class Queue {
     int queueInitSize;
@@ -106,7 +110,13 @@ public:
     bool hasCommonAdjacent(int u, int v);
     int getDist(int u, int v);
     void printGraph();
-    void bfs(int source); //will run bfs in the graph
+    void bfs(int source, char mode='T'); //will run bfs in the graph
+    void dfs(int source, char mode = 'T');
+    void dfsUtil(int source, char mode);
+    void time(int totalNumberOfVertices, char functionName);
+    void generateRandomGraph(int totalNumberOfVertices, int edges);
+
+    void generateRandomGraphWithoutVertices(int edges);
 };
 
 
@@ -237,8 +247,12 @@ bool Graph::hasCommonAdjacent(int u, int v) {
     return false;
 }
 
-void Graph::bfs(int source) {
+void Graph::bfs(int source, char mode) {
     //write this function
+    color = new int[nVertices];
+    getDistance = new int[nVertices];
+    parent = new int[nVertices];
+
     for (int i = 0; i < nVertices; i++) {
         color[i] = WHITE;
         getDistance[source] = INFINITY;
@@ -249,9 +263,13 @@ void Graph::bfs(int source) {
     parent[source] = source;
     getDistance[source] = 0;
     q.enqueue(source);
+    if(mode == 'N')
+        cout << " Nodes : ";
 
     while (!q.empty()) {
         source = q.dequeue();
+        if(mode == 'N')
+            cout << source << " ";
         for (int i = 0; i < nVertices; i++) {
             if (matrix[source][i]) {
                 if (color[i] == WHITE) {
@@ -264,8 +282,177 @@ void Graph::bfs(int source) {
         }
         color[source] = BLACK;
     }
+    if(mode == 'N')
+        cout << endl;
+}
+void Graph::dfsUtil(int source, char mode) {
+    if (mode == 'N')
+        cout << source << " " ;
+    color[source] = GREY;
+    for (int i=0;i<nVertices;i++)
+    {
+        if(matrix[source][i] && color[i] == WHITE)
+        {
+            parent[i] = source;
+            dfsUtil(i, mode);
+        }
+    }
+    color[source] = BLACK;
 }
 
+void Graph::dfs(int source, char mode)
+{
+    color = new int[nVertices];
+    parent = new int[nVertices];
+    for(int i=0;i<nVertices;i++)
+    {
+        color[i] = WHITE;
+    }
+    parent[source] = -1;
+    dfsUtil(source, mode);
+    if (mode == 'N')
+        cout << endl;
+
+}
+void Graph::time(int totalNumberofVertices, char functionName) {
+    std::chrono::time_point<std::chrono::system_clock> start, end;
+
+    Graph g = new Graph(this->directed);
+
+    if (functionName == 'B') {
+
+//        cout << "In time" << endl;
+        for (int vertices = 1000; vertices <= totalNumberofVertices; vertices *= 2) {
+            g.set_nVertices(vertices);
+            int edge = vertices;
+            for (int edges = edge; edges <= (edge * edge - edge) / 8; edges *= 2) {
+                g.generateRandomGraph(vertices, edges);
+                std::uniform_int_distribution<std::mt19937::result_type> dist6(0, vertices);
+                int randomSource = dist6(rng);
+                auto total_time_needed = 0ULL;
+                int avg_number = 10;
+                for (int counter = 1; counter <= avg_number; counter++) {
+                    start = std::chrono::high_resolution_clock::now();
+                    g.bfs(randomSource);
+                    end = std::chrono::high_resolution_clock::now();
+                    total_time_needed += std::chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+                }
+                auto one_time = total_time_needed / avg_number;
+
+                cout << "Vertices - " << vertices << " Edges " << edges;
+                cout << " Total time needed = " << one_time << endl;
+
+            }
+        }
+    } else {
+//        cout << "In time" << endl;
+        for (int vertices = 1000; vertices <= totalNumberofVertices; vertices *= 2) {
+            g.set_nVertices(vertices);
+            int edge = vertices;
+            for (int edges = edge; edges <= (edge * edge - edge) / 8; edges *= 2) {
+                g.generateRandomGraph(vertices, edges);
+                std::uniform_int_distribution<std::mt19937::result_type> dist6(0, vertices);
+                int randomSource = dist6(rng);
+                auto total_time_needed = 0ULL;
+                int avg_number = 10;
+                for (int counter = 1; counter <= avg_number; counter++) {
+                    start = std::chrono::high_resolution_clock::now();
+                    g.dfs(randomSource);
+                    end = std::chrono::high_resolution_clock::now();
+                    total_time_needed += std::chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+                }
+                auto one_time = total_time_needed / avg_number;
+
+                cout << "Vertices - " << vertices << " Edges " << edges;
+                cout << " Total time needed = " << one_time << endl;
+
+            }
+        }
+    }
+}
+void time(int totalNumberofVertices, char functionName, bool directed) {
+    std::chrono::time_point<std::chrono::system_clock> start, end;
+
+    Graph g = new Graph(directed);
+    ofstream outputFile;
+    outputFile.open("matrix_result.txt");
+    outputFile << "Vertices  Edges  Times" << endl;
+
+    if (functionName == 'B') {
+
+//        cout << "In time" << endl;
+        for (int vertices = 1000; vertices <= totalNumberofVertices; vertices *= 2) {
+            g.set_nVertices(vertices);
+            int edge = vertices;
+            for (int edges = edge; edges <= (edge * edge - edge) / 8; edges *= 2) {
+                g.generateRandomGraph(vertices, edges);
+                std::uniform_int_distribution<std::mt19937::result_type> dist6(0, vertices);
+                int randomSource = dist6(rng);
+                auto total_time_needed = 0ULL;
+                int avg_number = 10;
+                for (int counter = 1; counter <= avg_number; counter++) {
+                    start = std::chrono::high_resolution_clock::now();
+                    g.bfs(randomSource);
+                    end = std::chrono::high_resolution_clock::now();
+                    total_time_needed += std::chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+                }
+                auto one_time = total_time_needed / avg_number;
+
+                cout << "Vertices - " << vertices << " Edges " << edges;
+                cout << " Total time needed = " << one_time << endl;
+                outputFile << vertices << "  " << edges << "  " << one_time << endl;
+            }
+        }
+    } else {
+//        cout << "In time" << endl;
+        for (int vertices = 1000; vertices <= totalNumberofVertices; vertices *= 2) {
+            g.set_nVertices(vertices);
+            int edge = vertices;
+            for (int edges = edge; edges <= (edge * edge - edge) / 8; edges *= 2) {
+                g.generateRandomGraph(vertices, edges);
+                std::uniform_int_distribution<std::mt19937::result_type> dist6(0, vertices);
+                int randomSource = dist6(rng);
+                auto total_time_needed = 0ULL;
+                int avg_number = 10;
+                for (int counter = 1; counter <= avg_number; counter++) {
+                    start = std::chrono::high_resolution_clock::now();
+                    g.dfs(randomSource);
+                    end = std::chrono::high_resolution_clock::now();
+                    total_time_needed += std::chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+                }
+                auto one_time = total_time_needed / avg_number;
+
+                cout << "Vertices - " << vertices << " Edges " << edges;
+                cout << " Total time needed = " << one_time << endl;
+
+            }
+        }
+    }
+    outputFile.close();
+}
+void Graph::generateRandomGraphWithoutVertices(int edges) {
+    for (int j = 0; j < edges;) {
+        // distribution in range [0, totalNumberOfVertices]
+        std::uniform_int_distribution<std::mt19937::result_type> dist6(0, edges);
+
+        int u = dist6(rng), v = dist6(rng);
+//        cout << u << "--u || v-- " << v << " for edge & vertex test" << endl;
+        if (u != v && addEdge(u, v))
+            j++;
+    }
+}
+
+void Graph::generateRandomGraph(int totalNumberOfVertices, int edges) {
+    for (int j = 0; j < edges;) {
+        // distribution in range [0, totalNumberOfVertices]
+        std::uniform_int_distribution<std::mt19937::result_type> dist6(0, totalNumberOfVertices);
+
+        int u = dist6(rng), v = dist6(rng);
+//            cout << u << "--u || v-- " << v << " for edge & vertex test" << endl;
+        if (u != v && addEdge(u, v))
+            j++;
+    }
+}
 int Graph::getDist(int u, int v) {
     //returns the shortest path distance from u to v
     //must call bfs using u as the source vertex, then use distance array to find the distance
@@ -314,14 +501,14 @@ void getDirectedOrUndirected() {
 
 void menuByFunction()
 {
-    printf("\t 1. Add edge\n\t2. Remove Edge\n\t3. isEdge\n\t4. getInDegree\n\t"
+    printf("\t 0. Generate Random Graph\n\t1. Add edge\n\t2. Remove Edge\n\t3. isEdge\n\t4. getInDegree\n\t"
            "5. getOutDegree\n\t6.Adjacent vertices\n\t7. hasCommonAdjacent\n\t8. getDistance\n\t");
-    printf("9. Print Graph\n\t10. Exit.\n");
+    printf("9. Print Graph\n\t10. Time Analysis\n\t11. BFS\n\t12. Exit.\n");
 }
 
 //******main function to test your code*************************
 int main() {
-    int n;
+    int totalNumberOfVertices;
     int choice;
     bool dir;
     getDirectedOrUndirected();
@@ -341,14 +528,20 @@ int main() {
     }
 
     Graph g(dir);
-    printf("Enter number of vertices: ");
-    scanf("%d", &n);
-    g.set_nVertices(n);
+    printf("Enter maximum number of vertices: ");
+    scanf("%d", &totalNumberOfVertices);
+    g.set_nVertices(totalNumberOfVertices);
 
-    while (1) {
+    while (true) {
         menuByFunction();
         int ch;
         scanf("%d", &ch);
+        if (ch == 0) {
+            cout << "Enter the number of edges" << endl;
+            int edges;
+            cin >> edges;
+            g.generateRandomGraph(totalNumberOfVertices, edges);
+        }
         if (ch == 1) {
             int u, v;
             printf("Enter first node : ");
@@ -358,9 +551,9 @@ int main() {
 
             bool val = g.addEdge(u, v);
             if(val)
-                printf("Adding successful");
+                printf("Adding successful\n");
             else
-                printf("Adding unsuccessful");
+                printf("Adding unsuccessful\n");
         } else if (ch == 2) {
             int u, v;
             printf("Enter first node : ");
@@ -417,7 +610,23 @@ int main() {
             }
         } else if (ch == 9) {
             g.printGraph();
-        } else if (ch == 10) {
+        } else if(ch == 10){
+            cout << "Time take for \n\t\t1.BFS\n\t\t2.DFS\n";
+            int input;
+            cin >> input;
+            if (input == 1) {
+//                g.time(totalNumberOfVertices, 'B');
+                time(totalNumberOfVertices, 'B', dir);
+            } else {
+//                g.time(totalNumberOfVertices, 'D');
+                time(totalNumberOfVertices, 'D', dir);
+            }
+        }else if(ch == 11){
+            int source;
+            cout << "Enter source : " << endl;
+            cin >> source;
+            g.bfs(source, 'N');
+        }else if (ch == 12) {
             break;
         }
     }
