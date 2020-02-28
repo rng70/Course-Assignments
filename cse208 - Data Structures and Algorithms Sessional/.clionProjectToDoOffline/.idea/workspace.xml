@@ -12,12 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjList.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjMatrix.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +39,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="CMake Application.GraphAdjList">
     <configuration name="GraphAdjList" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_clionProjectToDoOffline" TARGET_NAME="GraphAdjList" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_clionProjectToDoOffline" RUN_TARGET_NAME="GraphAdjList">
@@ -77,7 +72,7 @@
       <workItem from="1582697689334" duration="2474000" />
       <workItem from="1582830727139" duration="608000" />
       <workItem from="1582838573979" duration="803000" />
-      <workItem from="1582840512931" duration="10205000" />
+      <workItem from="1582840512931" duration="10321000" />
     </task>
     <servers />
   </component>
@@ -105,14 +100,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="489" height="736" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1582871458908" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1582867901745">
+    <state x="277" y="74" key="SettingsEditor" timestamp="1582879081371">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582867901745" />
-    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1582697746992">
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582879081371" />
+    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1582879078807">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864@0.0.1536.864" timestamp="1582697746992" />
+    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864@0.0.1536.864" timestamp="1582879078807" />
     <state x="409" y="146" width="603" height="448" key="recent.locations.popup" timestamp="1582699087666">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
