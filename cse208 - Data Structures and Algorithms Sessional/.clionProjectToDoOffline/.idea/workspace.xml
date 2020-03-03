@@ -14,19 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjList.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjMatrix.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GraphAdjMatrix.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_clionProjectToDoOffline.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_clionProjectToDoOffline.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-2-Assignment_on_SSSP/description/CSE208-Jan-2020_ Single Source Shortest Path offline.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/description/CSE208-Jan-2020_ Single Source Shortest Path offline.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +86,7 @@
       <workItem from="1582830727139" duration="608000" />
       <workItem from="1582838573979" duration="803000" />
       <workItem from="1582840512931" duration="35645000" />
-      <workItem from="1583241208714" duration="7195000" />
+      <workItem from="1583241208714" duration="7558000" />
     </task>
     <servers />
   </component>
