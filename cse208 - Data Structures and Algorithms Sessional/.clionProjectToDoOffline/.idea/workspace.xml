@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <workItem from="1582830727139" duration="608000" />
       <workItem from="1582838573979" duration="803000" />
       <workItem from="1582840512931" duration="35645000" />
-      <workItem from="1583241208714" duration="7558000" />
+      <workItem from="1583241208714" duration="10041000" />
     </task>
     <servers />
   </component>
