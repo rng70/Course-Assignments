@@ -55,4 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GraphAdjList.dir/DependInfo.cmake"
   "CMakeFiles/GraphAdjMatrix.dir/DependInfo.cmake"
+  "CMakeFiles/DijkstraAndBellmanFord.dir/DependInfo.cmake"
   )

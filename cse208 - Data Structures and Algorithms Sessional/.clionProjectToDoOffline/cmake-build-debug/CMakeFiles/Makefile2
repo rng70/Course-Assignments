@@ -54,12 +54,14 @@ CMAKE_BINARY_DIR = "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithm
 # The main recursive "all" target.
 all: CMakeFiles/GraphAdjList.dir/all
 all: CMakeFiles/GraphAdjMatrix.dir/all
+all: CMakeFiles/DijkstraAndBellmanFord.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/GraphAdjList.dir/clean
 clean: CMakeFiles/GraphAdjMatrix.dir/clean
+clean: CMakeFiles/DijkstraAndBellmanFord.dir/clean
 
 .PHONY : clean
 
@@ -75,7 +77,7 @@ preinstall:
 CMakeFiles/GraphAdjList.dir/all:
 	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/depend
 	$(MAKE) -f CMakeFiles\GraphAdjList.dir\build.make CMakeFiles/GraphAdjList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target GraphAdjList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=3,4 "Built target GraphAdjList"
 .PHONY : CMakeFiles/GraphAdjList.dir/all
 
 # Build rule for subdir invocation for target.
@@ -102,7 +104,7 @@ CMakeFiles/GraphAdjList.dir/clean:
 CMakeFiles/GraphAdjMatrix.dir/all:
 	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/depend
 	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=3,4 "Built target GraphAdjMatrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target GraphAdjMatrix"
 .PHONY : CMakeFiles/GraphAdjMatrix.dir/all
 
 # Build rule for subdir invocation for target.
@@ -121,6 +123,33 @@ GraphAdjMatrix: CMakeFiles/GraphAdjMatrix.dir/rule
 CMakeFiles/GraphAdjMatrix.dir/clean:
 	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/clean
 .PHONY : CMakeFiles/GraphAdjMatrix.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/DijkstraAndBellmanFord.dir
+
+# All Build rule for target.
+CMakeFiles/DijkstraAndBellmanFord.dir/all:
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/depend
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target DijkstraAndBellmanFord"
+.PHONY : CMakeFiles/DijkstraAndBellmanFord.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DijkstraAndBellmanFord.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/DijkstraAndBellmanFord.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/DijkstraAndBellmanFord.dir/rule
+
+# Convenience name for target.
+DijkstraAndBellmanFord: CMakeFiles/DijkstraAndBellmanFord.dir/rule
+
+.PHONY : DijkstraAndBellmanFord
+
+# clean rule for target.
+CMakeFiles/DijkstraAndBellmanFord.dir/clean:
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/clean
+.PHONY : CMakeFiles/DijkstraAndBellmanFord.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

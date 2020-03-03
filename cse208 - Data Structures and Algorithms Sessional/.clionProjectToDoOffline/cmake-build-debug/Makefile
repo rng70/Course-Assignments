@@ -135,6 +135,19 @@ GraphAdjMatrix/fast:
 	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/build
 .PHONY : GraphAdjMatrix/fast
 
+#=============================================================================
+# Target rules for targets named DijkstraAndBellmanFord
+
+# Build rule for target.
+DijkstraAndBellmanFord: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 DijkstraAndBellmanFord
+.PHONY : DijkstraAndBellmanFord
+
+# fast build rule for target.
+DijkstraAndBellmanFord/fast:
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/build
+.PHONY : DijkstraAndBellmanFord/fast
+
 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj
 
 .PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
@@ -189,6 +202,33 @@ GraphAdjMatrix/fast:
 	$(MAKE) -f CMakeFiles\GraphAdjMatrix.dir\build.make CMakeFiles/GraphAdjMatrix.dir/47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.s
 .PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.cpp.s
 
+offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.obj: offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.obj
+
+.PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.obj
+
+# target to build an object file
+offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.obj:
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.obj
+.PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.obj
+
+offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.i: offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.i
+
+.PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.i
+
+# target to preprocess a source file
+offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.i:
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.i
+.PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.i
+
+offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.s: offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.s
+
+.PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.s
+
+# target to generate assembly for a file
+offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.s:
+	$(MAKE) -f CMakeFiles\DijkstraAndBellmanFord.dir\build.make CMakeFiles/DijkstraAndBellmanFord.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.s
+.PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -198,6 +238,7 @@ help:
 	@echo ... edit_cache
 	@echo ... GraphAdjList
 	@echo ... GraphAdjMatrix
+	@echo ... DijkstraAndBellmanFord
 	@echo ... rebuild_cache
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.i
@@ -205,6 +246,9 @@ help:
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.obj
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.i
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjMatrix.s
+	@echo ... offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.obj
+	@echo ... offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.i
+	@echo ... offline_and_reports/Offline-2-_Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.s
 .PHONY : help
 
 
