@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-2- Assignment_on_SSSP/d&f.cpp" "D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/DijkstraAndBellmanFord.dir/f67b606c94dc10fb5893957688cce904/d&f.cpp.obj"
+  "D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp" "D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

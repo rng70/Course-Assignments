@@ -115,8 +115,8 @@
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="DijkstraAndBellmanFord">
-				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/DijkstraAndBellmanFord.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="dnf">
+				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/dnf.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -131,14 +131,14 @@
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 DijkstraAndBellmanFord"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 dnf"/>
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="DijkstraAndBellmanFord/fast">
-				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/DijkstraAndBellmanFord.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="dnf/fast">
+				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/dnf.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -153,7 +153,7 @@
 					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 DijkstraAndBellmanFord/fast"/>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 dnf/fast"/>
 					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -176,8 +176,8 @@
 		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-1- Assignment_on_Graph/GraphAdjMatrix.cpp">
 			<Option target="GraphAdjMatrix"/>
 		</Unit>
-		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-2- Assignment_on_SSSP/1705070/DijkstraAndBellmanFord.cpp">
-			<Option target="DijkstraAndBellmanFord"/>
+		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp">
+			<Option target="dnf"/>
 		</Unit>
 		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
