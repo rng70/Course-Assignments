@@ -8,6 +8,9 @@ class Graph {
     int vertices;
     vector<vector<pi > > edgeLists;
     bool directed;
+    string filename = "D:\\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\\cse208 - Data "
+                      "Structures and Algorithms Sessional\\.clionProjectToDoOffline\\offline_and_reports\\"
+                      "Offline-2- Assignment_on_SSSP\\input and output files\\output.txt";
 public:
     Graph(bool directed, int vertices) {
         this->directed = directed;
@@ -44,8 +47,22 @@ public:
         }
     }
 
-    static void printDnBFPath(int destination, vector<int> &dijkstra_path) {
+    void printDnBFPath(int distance, int destination, vector<int> &dijkstra_path, char mode) {
 
+        ofstream out(filename, ios_base::app);
+        if(mode == 'B'){
+            if(distance == INT_MIN){
+                out << "Bellman Ford Algorithm:" << endl;
+                out << "Negative cycle detected" << endl;
+                return;
+            }else{
+                out << "Bellman Ford Algorithm:\n"<< distance << endl;
+
+            }
+        }
+        else if(mode == 'D'){
+            out << "Dijkstra Algorithm:\n" << distance << endl;
+        }
         string path = " ";
         while (true) {
             if (destination == -1) {
@@ -58,10 +75,10 @@ public:
         }
         reverse(path.begin(), path.end());
         cout << path << endl;
+        out << path << endl;
     }
 
     void printGraph() {
-        cout << " magi " << endl;
         for (int i = 0; i < vertices; i++) {
             cout << "vertex[" << i << "] : " << endl;
             for (auto &j : edgeLists[i]) {
@@ -96,10 +113,11 @@ public:
         }
         cout << "Dijkstra Algorithm:" << endl;
         cout << distance[destination] << endl;
-        printDnBFPath(destination, dijkstra_path);
+        printDnBFPath(distance[destination], destination, dijkstra_path, 'D');
     }
 
     void BellmanFord(int source, int destination) {
+
 
         vector<int> distance(vertices, INT_MAX);
         vector<int> bellman_path(vertices, -1);
@@ -124,12 +142,13 @@ public:
                 int cur_source = j.second;
                 if (distance[i] != INT_MAX && distance[cur_source] > distance[i] + j.first) {
                     cout << "Negative cycle detected" << endl;
+                    printDnBFPath(INT_MIN, destination, bellman_path,'B');
                     return;
                 }
             }
         }
         cout << distance[destination] << endl;
-        printDnBFPath(destination, bellman_path);
+        printDnBFPath(distance[destination], destination, bellman_path,'B');
     }
 };
 

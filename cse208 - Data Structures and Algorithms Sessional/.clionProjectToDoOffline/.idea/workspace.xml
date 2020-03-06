@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/input and output files/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj" afterDir="false" />
@@ -102,6 +102,7 @@
       <workItem from="1583468601175" duration="3386000" />
       <workItem from="1583474291047" duration="445000" />
       <workItem from="1583474780992" duration="2822000" />
+      <workItem from="1583502068568" duration="930000" />
     </task>
     <servers />
   </component>
@@ -120,22 +121,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="588" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582910717423" />
-    <state width="916" height="737" key="GridCell.Tab.0.bottom" timestamp="1583476260987">
+    <state width="669" height="737" key="GridCell.Tab.0.bottom" timestamp="1583503020826">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="916" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583476260987" />
-    <state width="916" height="737" key="GridCell.Tab.0.center" timestamp="1583476260987">
+    <state width="669" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
+    <state width="669" height="737" key="GridCell.Tab.0.center" timestamp="1583503020826">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="916" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583476260987" />
-    <state width="916" height="737" key="GridCell.Tab.0.left" timestamp="1583476260987">
+    <state width="669" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
+    <state width="669" height="737" key="GridCell.Tab.0.left" timestamp="1583503020826">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="916" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583476260987" />
-    <state width="916" height="737" key="GridCell.Tab.0.right" timestamp="1583476260987">
+    <state width="669" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
+    <state width="669" height="737" key="GridCell.Tab.0.right" timestamp="1583503020826">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="916" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583476260987" />
+    <state width="669" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
     <state x="277" y="74" key="SettingsEditor" timestamp="1582910735528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
