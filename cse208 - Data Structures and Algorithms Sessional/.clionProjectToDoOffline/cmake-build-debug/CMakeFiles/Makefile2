@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithm
 all: CMakeFiles/GraphAdjList.dir/all
 all: CMakeFiles/GraphAdjMatrix.dir/all
 all: CMakeFiles/dnf.dir/all
+all: CMakeFiles/apsp.dir/all
 
 .PHONY : all
 
@@ -62,6 +63,7 @@ all: CMakeFiles/dnf.dir/all
 clean: CMakeFiles/GraphAdjList.dir/clean
 clean: CMakeFiles/GraphAdjMatrix.dir/clean
 clean: CMakeFiles/dnf.dir/clean
+clean: CMakeFiles/apsp.dir/clean
 
 .PHONY : clean
 
@@ -131,7 +133,7 @@ CMakeFiles/GraphAdjMatrix.dir/clean:
 CMakeFiles/dnf.dir/all:
 	$(MAKE) -f CMakeFiles\dnf.dir\build.make CMakeFiles/dnf.dir/depend
 	$(MAKE) -f CMakeFiles\dnf.dir\build.make CMakeFiles/dnf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target dnf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target dnf"
 .PHONY : CMakeFiles/dnf.dir/all
 
 # Build rule for subdir invocation for target.
@@ -150,6 +152,33 @@ dnf: CMakeFiles/dnf.dir/rule
 CMakeFiles/dnf.dir/clean:
 	$(MAKE) -f CMakeFiles\dnf.dir\build.make CMakeFiles/dnf.dir/clean
 .PHONY : CMakeFiles/dnf.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/apsp.dir
+
+# All Build rule for target.
+CMakeFiles/apsp.dir/all:
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/depend
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target apsp"
+.PHONY : CMakeFiles/apsp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/apsp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/apsp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/apsp.dir/rule
+
+# Convenience name for target.
+apsp: CMakeFiles/apsp.dir/rule
+
+.PHONY : apsp
+
+# clean rule for target.
+CMakeFiles/apsp.dir/clean:
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/clean
+.PHONY : CMakeFiles/apsp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

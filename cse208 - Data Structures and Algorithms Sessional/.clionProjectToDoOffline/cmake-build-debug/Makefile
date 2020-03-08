@@ -148,6 +148,19 @@ dnf/fast:
 	$(MAKE) -f CMakeFiles\dnf.dir\build.make CMakeFiles/dnf.dir/build
 .PHONY : dnf/fast
 
+#=============================================================================
+# Target rules for targets named apsp
+
+# Build rule for target.
+apsp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 apsp
+.PHONY : apsp
+
+# fast build rule for target.
+apsp/fast:
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/build
+.PHONY : apsp/fast
+
 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj: 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.cpp.obj
 
 .PHONY : 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
@@ -229,6 +242,33 @@ offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.s:
 	$(MAKE) -f CMakeFiles\dnf.dir\build.make CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.s
 .PHONY : offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.s
 
+offline_and_reports/Offline-3-Assignment_on_APSP/apsp.obj: offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.obj
+
+.PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.obj
+
+# target to build an object file
+offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.obj:
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.obj
+.PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.obj
+
+offline_and_reports/Offline-3-Assignment_on_APSP/apsp.i: offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.i
+
+.PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.i
+
+# target to preprocess a source file
+offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.i:
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.i
+.PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.i
+
+offline_and_reports/Offline-3-Assignment_on_APSP/apsp.s: offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s
+
+.PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.s
+
+# target to generate assembly for a file
+offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s:
+	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s
+.PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -239,6 +279,7 @@ help:
 	@echo ... GraphAdjList
 	@echo ... GraphAdjMatrix
 	@echo ... dnf
+	@echo ... apsp
 	@echo ... rebuild_cache
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.i
@@ -249,6 +290,9 @@ help:
 	@echo ... offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.obj
 	@echo ... offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.i
 	@echo ... offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.s
+	@echo ... offline_and_reports/Offline-3-Assignment_on_APSP/apsp.obj
+	@echo ... offline_and_reports/Offline-3-Assignment_on_APSP/apsp.i
+	@echo ... offline_and_reports/Offline-3-Assignment_on_APSP/apsp.s
 .PHONY : help
 
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="_clionProjectToDoOffline" targetName="apsp" />
       <config projectName="_clionProjectToDoOffline" targetName="dnf" />
       <config projectName="_clionProjectToDoOffline" targetName="GraphAdjList" />
       <config projectName="_clionProjectToDoOffline" targetName="GraphAdjMatrix" />
@@ -14,12 +15,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/input and output files/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dnf.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dnf.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_clionProjectToDoOffline.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_clionProjectToDoOffline.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,6 +74,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="apsp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_clionProjectToDoOffline" TARGET_NAME="apsp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_clionProjectToDoOffline" RUN_TARGET_NAME="apsp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dnf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_clionProjectToDoOffline" TARGET_NAME="dnf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_clionProjectToDoOffline" RUN_TARGET_NAME="dnf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -77,6 +87,7 @@
     <list>
       <item itemvalue="CMake Application.GraphAdjList" />
       <item itemvalue="CMake Application.GraphAdjMatrix" />
+      <item itemvalue="CMake Application.apsp" />
       <item itemvalue="CMake Application.dnf" />
     </list>
   </component>
@@ -103,6 +114,7 @@
       <workItem from="1583474291047" duration="445000" />
       <workItem from="1583474780992" duration="2822000" />
       <workItem from="1583502068568" duration="930000" />
+      <workItem from="1583648522912" duration="11229000" />
     </task>
     <servers />
   </component>
@@ -137,10 +149,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="669" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1582910735528">
+    <state x="277" y="74" key="SettingsEditor" timestamp="1583652852291">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582910735528" />
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583652852291" />
     <state x="353" y="35" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583397974026">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
