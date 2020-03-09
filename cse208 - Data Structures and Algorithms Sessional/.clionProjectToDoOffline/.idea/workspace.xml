@@ -14,11 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +119,7 @@
       <workItem from="1583502068568" duration="930000" />
       <workItem from="1583648522912" duration="11229000" />
       <workItem from="1583717597039" duration="2232000" />
-      <workItem from="1583737761290" duration="6109000" />
+      <workItem from="1583737761290" duration="6706000" />
     </task>
     <servers />
   </component>
