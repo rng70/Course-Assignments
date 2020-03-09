@@ -18,20 +18,20 @@ public:
         edgeLists.resize(vertices);
     }
 
-//    void removeEdge(int u, int v, int weight) {
-//        vector<pair<int, int> >::iterator it;
-//        pi p(weight, v);
-//        if (!directed) {
-//            pi m(weight, u);
-//            it = find(edgeLists[v].begin(), edgeLists[v].end(), m);
-//            if (it != edgeLists[v].end()) {
-//                edgeLists[v].erase(it);
-//            }
-//        }
-//        it = find(edgeLists[u].begin(), edgeLists[u].end(), p);
-//        if (it != edgeLists[u].end())
-//            edgeLists[u].erase(it);
-//    }
+    void removeEdge(int u, int v, int weight) {
+        vector<pair<int, int> >::iterator it;
+        pi p(weight, v);
+        if (!directed) {
+            pi m(weight, u);
+            it = find(edgeLists[v].begin(), edgeLists[v].end(), m);
+            if (it != edgeLists[v].end()) {
+                edgeLists[v].erase(it);
+            }
+        }
+        it = find(edgeLists[u].begin(), edgeLists[u].end(), p);
+        if (it != edgeLists[u].end())
+            edgeLists[u].erase(it);
+    }
 
     void addEdge(int u, int v, int weight) {
 

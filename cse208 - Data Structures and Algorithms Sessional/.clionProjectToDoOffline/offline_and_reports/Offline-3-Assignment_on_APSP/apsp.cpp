@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
+#include <limits>
+
 #define vi vector<int>
+#define FOR(i, a) for(int i=0;i<a;i++)
 using namespace std;
 
 class Edge {
@@ -26,10 +29,10 @@ public:
         for (int i = 0; i < V; i++) {
             delete[] parentMatrix[i];
             delete[] distanceMatrix[i];
-            delete[] parentMatrix;
-            delete[] distanceMatrix;
-            parentMatrix = distanceMatrix = nullptr;
         }
+        delete[] parentMatrix;
+        delete[] distanceMatrix;
+        parentMatrix = distanceMatrix = nullptr;
     }
 
     void setVertices(int n) {
@@ -90,7 +93,7 @@ public:
                 }
             }
         }
-        return INT_MAX;
+        return numeric_limits<double>::infinity();
     }
 
     void reweightEdge(int u, int v, int w) {
@@ -108,11 +111,44 @@ public:
     }
 
     void floydWarshall() {
-        return;
+        FOR(i, V) {
+            FOR(j, V) {
+                if (i == j)
+                    distanceMatrix[i][j] = 0;
+                else
+                    distanceMatrix[i][j] = getWeight(i, j);
+            }
+        }
+        FOR(k, V) {
+            FOR(i, V) {
+                FOR(j, V) {
+                    if (distanceMatrix[i][j] > distanceMatrix[i][k] + distanceMatrix[k][j]) {
+                        distanceMatrix[i][j] = distanceMatrix[i][k] + distanceMatrix[k][j];
+                        parentMatrix[i][j] = k;
+                    } else
+                        parentMatrix[i][j] = j;
+                }
+            }
+        }
     }
 
     bool BellmanFord() {
-        return true;
+        vi d(V, INT_MAX);
+        FOR(i, V) {
+            for (Edge &e:E) {
+                int u = (int) e.get(), v = (int) e.get('v'), w = (int) e.get('w');
+                if (d[v] != INT_MAX && d[v] > d[u] + w) {
+                    d[v] = d[u] + w;
+                }
+            }
+        }
+        for (Edge &e:E) {
+            int u = (int) e.get(), v = (int) e.get('v'), w = (int) e.get('w');
+            if (d[v] != INT_MAX && d[v] > d[u] + w) {
+                return true;
+            }
+        }
+        return false;
     }
 
     void Dijkstra(int n) {
@@ -122,14 +158,54 @@ public:
     void johnsonsAlgo() {
         return;
     }
-    double getShortestPathWeight(int u ,int v){
+
+    double getShortestPathWeight(int u, int v) {
         return distanceMatrix[u][v];
     }
-    void printShortestPath(int u, int v){
+
+    void printShortestPath(int u, int v) {
         int p = v;
         vi nodes;
-        while(p!=u){
+        vi weight;
+        while (p != u) {
             nodes.push_back(p);
+            weight.push_back(getWeight(p, (int) parentMatrix[u][p]));
+            p = (int) parentMatrix[u][p];
+        }
+    }
+
+    void printDistanceMatrix() {
+        for (int i = 0; i < V; i++) {
+            for (int j = 0; j < V; j++) {
+                if (distanceMatrix[i][j] == numeric_limits<double>::infinity()) {
+                    cout << "INF ";
+                    continue;
+                }
+                cout << distanceMatrix[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    void printPredecessorMatrix() {
+        FOR(i, V) {
+            FOR(j, V) {
+                if ((int) parentMatrix[i][j] == -1) {
+                    cout << "NIL ";
+                    continue;
+                }
+                cout << (int) parentMatrix[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    void cleanSPInfo() {
+        FOR(i, V) {
+            FOR(j, V) {
+                distanceMatrix[i][j] = numeric_limits<double>::infinity();
+                parentMatrix[i][j] = -1;
+            }
         }
     }
 };
