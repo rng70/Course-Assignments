@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+#define vi vector<int>
 using namespace std;
 
 class Edge {
@@ -16,14 +16,31 @@ public:
 class Graph {
     int V;
     bool dir;
-    vector<int> vert;
+    vi vert;
     vector<Edge> E;
+    double **parentMatrix, **distanceMatrix;
 public:
     Graph(bool d) : dir(d) {}
+
+    ~Graph() {
+        for (int i = 0; i < V; i++) {
+            delete[] parentMatrix[i];
+            delete[] distanceMatrix[i];
+            delete[] parentMatrix;
+            delete[] distanceMatrix;
+            parentMatrix = distanceMatrix = nullptr;
+        }
+    }
 
     void setVertices(int n) {
         this->V = n;
         vert.resize(n);
+        parentMatrix = new double *[n];
+        distanceMatrix = new double *[n];
+        for (int i = 0; i < n; i++) {
+            parentMatrix[i] = new double[n];
+            distanceMatrix[i] = new double[n];
+        }
     }
 
     bool addEdge(int u, int v, int w) {
@@ -75,23 +92,46 @@ public:
         }
         return INT_MAX;
     }
-    void reweightEdge(int u, int v, int w){
-       removeEdge(u, v);
-       addEdge(u, v, w);
-    }
-    void floydWarshall(){
-        return ;
-    }
-    bool BellmanFord(){
-        return true;
-    }
-    void Dijkstra(int n){
-        return ;
-    }
-    void johnsonsAlgo(){
-        return ;
+
+    void reweightEdge(int u, int v, int w) {
+        removeEdge(u, v);
+        addEdge(u, v, w);
     }
 
+    Edge *searchEdge(int u, int v) {
+        for (Edge &e:E) {
+            int f = (int) e.get(), s = (int) e.get('v');
+            if (f == u && s == v)
+                return &e;
+        }
+        return nullptr;
+    }
+
+    void floydWarshall() {
+        return;
+    }
+
+    bool BellmanFord() {
+        return true;
+    }
+
+    void Dijkstra(int n) {
+        return;
+    }
+
+    void johnsonsAlgo() {
+        return;
+    }
+    double getShortestPathWeight(int u ,int v){
+        return distanceMatrix[u][v];
+    }
+    void printShortestPath(int u, int v){
+        int p = v;
+        vi nodes;
+        while(p!=u){
+            nodes.push_back(p);
+        }
+    }
 };
 
 int main() {
