@@ -14,7 +14,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="" />
+    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,6 +123,7 @@
       <workItem from="1583648522912" duration="11229000" />
       <workItem from="1583717597039" duration="2232000" />
       <workItem from="1583737761290" duration="6706000" />
+      <workItem from="1583994167875" duration="4132000" />
     </task>
     <servers />
   </component>
@@ -174,16 +178,5 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="46" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1583742174221" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/offline_and_reports/Offline-2- Assignment_on_SSSP/dnf.cpp</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

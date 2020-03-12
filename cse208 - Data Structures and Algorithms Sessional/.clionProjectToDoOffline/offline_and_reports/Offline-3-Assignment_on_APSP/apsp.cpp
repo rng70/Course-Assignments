@@ -2,6 +2,8 @@
 #include <limits>
 
 #define vi vector<int>
+#define pi pair<int, int>
+#define pb push_back
 #define FOR(i, a) for(int i=0;i<a;i++)
 using namespace std;
 
@@ -152,7 +154,30 @@ public:
     }
 
     void Dijkstra(int n) {
-        return;
+        priority_queue<pi, vector<pi >, greater<> > pq;
+        vector<vector<pi > > adjList;
+        for (Edge e : E) {
+            adjList[(int) e.get()].pb({(int) e.get('v'), (int) e.get('w')});
+        }
+
+        distanceMatrix[n][n] = 0;
+        pq.push({0, n});
+
+        while (!pq.empty()) {
+            int w = (int) pq.top().first;
+            int u = pq.top().second;
+
+            for (auto e : adjList[u]) {
+                int v = e.first;
+                int d = (int) abs(e.second);
+                if (distanceMatrix[v][v] > distanceMatrix[u][v] + d) {
+                    distanceMatrix[v][v] = distanceMatrix[u][v] + d;
+                    pq.push({distanceMatrix[v][v], v});
+                    parentMatrix[v][v] = u;
+                }
+            }
+        }
+
     }
 
     void johnsonsAlgo() {
@@ -210,6 +235,51 @@ public:
     }
 };
 
+void menu() {
+    cout << "\t1. Clear value of parent and distance Matrix\n\t"
+            "2. Implement Floyd-Warshall\n\t3. Implement Johnson’s Algorithm\n\t"
+            "4. Print Shortest path\n\t5. pPrint graph\n\t6. Print distance Matrix D"
+            "\n\t7. Prints predecessor matrix P\n\t8. Exit" << endl;
+}
+
 int main() {
+    Graph g(true);
+
+    int N, M;
+    cin >> N >> M;
+    g.setVertices(N);
+
+    int u, v, w;
+    while (M--) {
+        cin >> u >> v >> w;
+        g.addEdge(u, v, w);
+    }
+    cout << "Graph created\n";
+    int choice;
+    while (true) {
+        menu();
+        cin >> choice;
+
+        if (choice == 1)
+            g.cleanSPInfo();
+        else if (choice == 2)
+            g.floydWarshall();
+        else if (choice == 3)
+            g.johnsonsAlgo();
+        else if (choice == 4) {
+            cout << "Enter u and v ";
+            int s, d;
+            cin >> s >> d;
+            g.printShortestPath(s, d);
+        } else if (choice == 5) {
+//            g.printGraph();
+        } else if (choice == 6) {
+            g.printDistanceMatrix();
+        } else if (choice == 7){
+            g.printPredecessorMatrix();
+        } else{
+            break;
+        }
+    }
 
 }
