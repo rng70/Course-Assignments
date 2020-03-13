@@ -20,15 +20,16 @@ public:
 
 class Graph {
     int V;
-    bool dir;
-    vi vert;
+    bool dir, f_n;
+    vi vert, d;
+//    vi d;
     vector<Edge> E;
-    double **parentMatrix, **distanceMatrix;
+    double **parentMatrix{}, **distanceMatrix{};
 public:
-    Graph(bool d) : dir(d) {}
+    Graph(bool d, bool f = false) : dir(d), f_n(f) {}
 
     ~Graph() {
-        for (int i = 0; i < V; i++) {
+        FOR(i, V) {
             delete[] parentMatrix[i];
             delete[] distanceMatrix[i];
         }
@@ -38,17 +39,18 @@ public:
     }
 
     void setVertices(int n) {
-        this->V = n;
-        vert.resize(n);
-        parentMatrix = new double *[n];
-        distanceMatrix = new double *[n];
-        for (int i = 0; i < n; i++) {
-            parentMatrix[i] = new double[n];
-            distanceMatrix[i] = new double[n];
+        this->V = n + 1;
+        vert.resize(V);
+        d.resize(V, INT_MAX);
+        parentMatrix = new double *[V];
+        distanceMatrix = new double *[V];
+        FOR(i, V) {
+            parentMatrix[i] = new double[V];
+            distanceMatrix[i] = new double[V];
         }
     }
 
-    bool addEdge(int u, int v, int w) {
+    bool addEdge(int u, int v, double w) {
         if ((u >= 0 && u < V) && (v >= 0 && v < V)) {
             double W = getWeight(u, v);
             if (W != INT_MAX && W != w) {
@@ -71,19 +73,11 @@ public:
 
     bool isEdge(int u, int v) {
         if ((u >= 0 && u < V) && (v >= 0 && v < V)) {
-            vector<Edge>::iterator it;
-            return find_if(E.begin(), E.end(), [&](Edge &e) {
+            return (find_if(E.begin(), E.end(), [&](Edge &e) {
                 return ((int) e.get() == u && (int) e.get('v') == v);
-            }) != E.end();
+            }) != E.end());
         }
-//            for (Edge e:E) {
-//                int f = (int) e.get(), s = (int) e.get('v');
-//                if (f == u && s == v) {
-//                    return true;
-//                }
-//            }
-//        }
-//        return false;
+        return false;
     }
 
     double getWeight(int u, int v) {
@@ -98,11 +92,6 @@ public:
         return numeric_limits<double>::infinity();
     }
 
-    void reweightEdge(int u, int v, int w) {
-        removeEdge(u, v);
-        addEdge(u, v, w);
-    }
-
     Edge *searchEdge(int u, int v) {
         for (Edge &e:E) {
             int f = (int) e.get(), s = (int) e.get('v');
@@ -112,30 +101,185 @@ public:
         return nullptr;
     }
 
+    void reweightEdge(int u, int v, double w) {
+        removeEdge(u, v);
+        addEdge(u, v, w);
+        Edge *e = searchEdge(u, v);
+//        if(searchEdge(u, v)!= nullptr){
+//            e.set(searchEdge(u, v), 'w', w);
+//        }
+    }
+
+    double getShortestPathWeight(int u, int v) {
+        return distanceMatrix[u][v];
+    }
+
+    void printShortestPath(int u, int v) {
+        ofstream out("output.txt", ios_base::app);
+        cout << "Shortest Path Weight: " << getShortestPathWeight(u, v) << endl;
+        if (f_n)
+            out << "Shortest Path Weight: " << getShortestPathWeight(u, v) << endl;
+
+        int p = v;
+        vi nodes;
+        vi weight;
+        while (p != u) {
+            nodes.push_back(p);
+//            cout << "G " << p << " " << parentMatrix[u][p] << " " << getWeight(u, parentMatrix[u][p]);
+            weight.push_back(getWeight((int) parentMatrix[u][p], p));
+            p = (int) parentMatrix[u][p];
+        }
+        reverse(nodes.begin(), nodes.end());
+        reverse(weight.begin(), weight.end());
+        int t = 0;
+        cout << "Path: " << u << " --> ";
+        if (f_n)
+            out << "Path: " << u << " --> ";
+        int c = 1;
+        for (auto n:nodes) {
+            if (c != nodes.size()) {
+                cout << n << "(" << weight[t] << ") --> ";
+                if (f_n)
+                    out << n << "(" << weight[t] << ") --> ";
+            } else {
+                cout << n << "(" << weight[t] << ")";
+                if (f_n)
+                    out << n << "(" << weight[t] << ")";
+            }
+            t++;
+            c++;
+        }
+        cout << endl;
+        if (f_n)
+            out << endl;
+    }
+
+    void printDistanceMatrix() {
+        ofstream out("output.txt", ios_base::app);
+        if (f_n)
+            out << "Distance Matrix:" << endl;
+        cout << "Distance Matrix:" << endl;
+        FOR(i, V) {
+            if (i == 0)
+                continue;
+            FOR(j, V) {
+                if (j == 0)
+                    continue;
+                if (distanceMatrix[i][j] == numeric_limits<double>::infinity()) {
+                    cout << "INF ";
+                    if (f_n)
+                        out << "INF ";
+                    continue;
+                }
+                cout << distanceMatrix[i][j] << " ";
+                if (f_n)
+                    out << distanceMatrix[i][j] << " ";
+            }
+            cout << endl;
+            if (f_n)
+                out << endl;
+        }
+    }
+
+    void printPredecessorMatrix() {
+        ofstream out("output.txt", ios_base::app);
+        if (f_n)
+            out << "Predecessor Matrix:" << endl;
+        cout << "Predecessor Matrix:" << endl;
+        FOR(i, V) {
+            if (i == 0)
+                continue;
+            FOR(j, V) {
+                if (j == 0)
+                    continue;
+                if ((int) parentMatrix[i][j] == -1) {
+                    cout << "NIL ";
+                    if (f_n)
+                        out << "NIL ";
+                    continue;
+                }
+                cout << (int) parentMatrix[i][j] << " ";
+                if (f_n)
+                    out << (int) parentMatrix[i][j] << " ";
+            }
+            cout << endl;
+            if (f_n)
+                out << endl;
+        }
+    }
+
+    void cleanSPInfo() {
+        FOR(i, V) {
+            FOR(j, V) {
+                distanceMatrix[i][j] = numeric_limits<double>::infinity();
+                parentMatrix[i][j] = -1;
+            }
+        }
+    }
+
+    void edgeToList(vector<vector<pi > > &adjList) {
+        for (Edge e : E) {
+            adjList[(int) e.get()].pb({(int) e.get('v'), (int) e.get('w')});
+        }
+    }
+
+    void printGraph() {
+        ofstream out("output.txt", ios_base::app);
+        if (f_n)
+            out << "Graph: " << endl;
+        cout << "Graph:" << endl;
+        vector<vector<pi > > adjList(V);
+        edgeToList(adjList);
+        FOR(i, V) {
+            if(i==0)
+                continue;
+            cout << i << " : ";
+            if (f_n)
+                out << i << " : ";
+            int t = 1;
+            for (auto v:adjList[i]) {
+                cout << v.first << "(" << v.second << ")";
+                if (f_n)
+                    out << v.first << "(" << v.second << ")";
+                if (t != adjList[i].size()) {
+                    cout << " --> ";
+                    if (f_n)
+                        out << " --> ";
+                }
+
+                t++;
+            }
+            cout << endl;
+            if (f_n)
+                cout << endl;
+        }
+    }
+
     void floydWarshall() {
         FOR(i, V) {
             FOR(j, V) {
                 if (i == j)
                     distanceMatrix[i][j] = 0;
-                else
+                else {
                     distanceMatrix[i][j] = getWeight(i, j);
+                    parentMatrix[i][j] = i;
+                }
             }
         }
         FOR(k, V) {
             FOR(i, V) {
                 FOR(j, V) {
-                    if (distanceMatrix[i][j] > distanceMatrix[i][k] + distanceMatrix[k][j]) {
+                    if ((distanceMatrix[i][j] > distanceMatrix[i][k] + distanceMatrix[k][j])) {
                         distanceMatrix[i][j] = distanceMatrix[i][k] + distanceMatrix[k][j];
-                        parentMatrix[i][j] = k;
+                        parentMatrix[i][j] = parentMatrix[k][j];
                     } else
-                        parentMatrix[i][j] = j;
+                        parentMatrix[i][j] = parentMatrix[i][j];
                 }
             }
         }
     }
 
     bool BellmanFord() {
-        vi d(V, INT_MAX);
         FOR(i, V) {
             for (Edge &e:E) {
                 int u = (int) e.get(), v = (int) e.get('v'), w = (int) e.get('w');
@@ -155,83 +299,69 @@ public:
 
     void Dijkstra(int n) {
         priority_queue<pi, vector<pi >, greater<> > pq;
-        vector<vector<pi > > adjList;
-        for (Edge e : E) {
-            adjList[(int) e.get()].pb({(int) e.get('v'), (int) e.get('w')});
+
+        vector<vector<pi > > adjList(V);
+        edgeToList(adjList);
+
+        bool visited[V];
+        for (auto &i:visited) {
+            i = false;
         }
 
         distanceMatrix[n][n] = 0;
         pq.push({0, n});
 
         while (!pq.empty()) {
-            int w = (int) pq.top().first;
             int u = pq.top().second;
+            pq.pop();
+            if (visited[u])
+                continue;
 
             for (auto e : adjList[u]) {
-                int v = e.first;
-                int d = (int) abs(e.second);
-                if (distanceMatrix[v][v] > distanceMatrix[u][v] + d) {
-                    distanceMatrix[v][v] = distanceMatrix[u][v] + d;
-                    pq.push({distanceMatrix[v][v], v});
-                    parentMatrix[v][v] = u;
+                if (distanceMatrix[n][e.first] > distanceMatrix[n][u] + e.second &&
+                    distanceMatrix[n][u] != numeric_limits<double>::infinity()) {
+                    distanceMatrix[n][e.first] = distanceMatrix[n][u] + e.second;
+                    pq.push({distanceMatrix[n][e.first], e.first});
+                    parentMatrix[n][e.first] = u;
                 }
             }
+            visited[u] = true;
         }
-
     }
 
     void johnsonsAlgo() {
-        return;
-    }
-
-    double getShortestPathWeight(int u, int v) {
-        return distanceMatrix[u][v];
-    }
-
-    void printShortestPath(int u, int v) {
-        int p = v;
-        vi nodes;
-        vi weight;
-        while (p != u) {
-            nodes.push_back(p);
-            weight.push_back(getWeight(p, (int) parentMatrix[u][p]));
-            p = (int) parentMatrix[u][p];
-        }
-    }
-
-    void printDistanceMatrix() {
-        for (int i = 0; i < V; i++) {
-            for (int j = 0; j < V; j++) {
-                if (distanceMatrix[i][j] == numeric_limits<double>::infinity()) {
-                    cout << "INF ";
-                    continue;
-                }
-                cout << distanceMatrix[i][j] << " ";
-            }
-            cout << endl;
-        }
-    }
-
-    void printPredecessorMatrix() {
+        ofstream out("output.txt", ios_base::app);
         FOR(i, V) {
-            FOR(j, V) {
-                if ((int) parentMatrix[i][j] == -1) {
-                    cout << "NIL ";
-                    continue;
-                }
-                cout << (int) parentMatrix[i][j] << " ";
-            }
-            cout << endl;
+            if (i == 0)
+                continue;
+            addEdge(0, i, 0);
         }
-    }
-
-    void cleanSPInfo() {
+        if (BellmanFord()) {
+            cout << "Negative cycle detected" << endl;
+            if (f_n)
+                out << "Negative cycle detected" << endl;
+            return;
+        }
+        for (Edge e:E) {
+            reweightEdge((int) e.get(), (int) e.get('v'), e.get('w') + (double)
+                    d[(int) e.get()] - (double) d[(int) e.get('v')]);
+        }
         FOR(i, V) {
+            if (i == 0)
+                continue;
+            Dijkstra(i);
+            for (Edge e:E) {
+                reweightEdge((int) e.get(), (int) e.get('v'), e.get('w') - (double)
+                        d[(int) e.get()] + (double) d[(int) e.get('v')]);
+            }
             FOR(j, V) {
-                distanceMatrix[i][j] = numeric_limits<double>::infinity();
-                parentMatrix[i][j] = -1;
+                distanceMatrix[i][j] += d[j] - d[i];
             }
         }
+        FOR(i, V) {
+            removeEdge(0, i);
+        }
+
     }
 };
 
@@ -242,7 +372,7 @@ void menu() {
             "\n\t7. Prints predecessor matrix P\n\t8. Exit" << endl;
 }
 
-int main() {
+void consoleInput() {
     Graph g(true);
 
     int N, M;
@@ -260,26 +390,85 @@ int main() {
         menu();
         cin >> choice;
 
-        if (choice == 1)
+        if (choice == 1) {
             g.cleanSPInfo();
-        else if (choice == 2)
+            cout << "APSP matrices cleared" << endl;
+        } else if (choice == 2) {
             g.floydWarshall();
-        else if (choice == 3)
+            cout << "Floyd-Warshall algorithm implemented" << endl;
+        } else if (choice == 3) {
             g.johnsonsAlgo();
-        else if (choice == 4) {
+            cout << "Johnson's algorithm implemented" << endl;
+        } else if (choice == 4) {
             cout << "Enter u and v ";
             int s, d;
             cin >> s >> d;
             g.printShortestPath(s, d);
         } else if (choice == 5) {
-//            g.printGraph();
+            g.printGraph();
         } else if (choice == 6) {
             g.printDistanceMatrix();
-        } else if (choice == 7){
+        } else if (choice == 7) {
             g.printPredecessorMatrix();
-        } else{
+        } else {
             break;
         }
     }
+}
 
+void fileInput() {
+    Graph g(true, true);
+    ifstream in("data.txt");
+    ofstream out("output.txt", ios_base::app);
+    out << "---------------Start---------------" << endl;
+
+    int N, M;
+    in >> N >> M;
+    g.setVertices(N);
+
+    int u, v, w;
+    while (M--) {
+        in >> u >> v >> w;
+        g.addEdge(u, v, w);
+    }
+    out << "Graph created\n";
+    int choice;
+    while (true) {
+        menu();
+        in >> choice;
+
+        if (choice == 1) {
+            g.cleanSPInfo();
+            out << "APSP matrices cleared" << endl;
+        } else if (choice == 2) {
+            g.floydWarshall();
+            out << "Floyd-Warshall algorithm implemented" << endl;
+        } else if (choice == 3) {
+            g.johnsonsAlgo();
+            out << "Johnson's algorithm implemented" << endl;
+        } else if (choice == 4) {
+            int s, d;
+            in >> s >> d;
+            g.printShortestPath(s, d);
+        } else if (choice == 5) {
+            g.printGraph();
+        } else if (choice == 6) {
+            g.printDistanceMatrix();
+        } else if (choice == 7) {
+            g.printPredecessorMatrix();
+        } else {
+            out << "---------------End---------------" << endl << endl;
+            break;
+        }
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter choice\n\t1. consoleInput\n\t2. fileInput" << endl;
+    cin >> n;
+    if (n == 1)
+        consoleInput();
+    if (n == 2)
+        fileInput();
 }

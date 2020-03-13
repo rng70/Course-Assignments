@@ -15,7 +15,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/description/final_update_CSE208 _ All Pairs Shortest Paths Offline.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/apsp.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/apsp.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dnf.dir/offline_and_reports/Offline-2-_Assignment_on_SSSP/dnf.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dnf.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dnf.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,17 +66,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\offline_and_reports\Offline-2- Assignment_on_SSSP" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.dnf">
+  <component name="RunManager" selected="CMake Application.apsp">
     <configuration name="GraphAdjList" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_clionProjectToDoOffline" TARGET_NAME="GraphAdjList" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_clionProjectToDoOffline" RUN_TARGET_NAME="GraphAdjList">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -124,6 +137,10 @@
       <workItem from="1583717597039" duration="2232000" />
       <workItem from="1583737761290" duration="6706000" />
       <workItem from="1583994167875" duration="4132000" />
+      <workItem from="1584080772591" duration="9308000" />
+      <workItem from="1584094587004" duration="5864000" />
+      <workItem from="1584110253369" duration="1641000" />
+      <workItem from="1584111982336" duration="1374000" />
     </task>
     <servers />
   </component>
@@ -142,34 +159,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="588" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582910717423" />
-    <state width="669" height="737" key="GridCell.Tab.0.bottom" timestamp="1583503020826">
+    <state width="490" height="737" key="GridCell.Tab.0.bottom" timestamp="1584113212920">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="669" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
-    <state width="669" height="737" key="GridCell.Tab.0.center" timestamp="1583503020826">
+    <state width="490" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584113212920" />
+    <state width="490" height="737" key="GridCell.Tab.0.center" timestamp="1584113212920">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="669" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
-    <state width="669" height="737" key="GridCell.Tab.0.left" timestamp="1583503020826">
+    <state width="490" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584113212920" />
+    <state width="490" height="737" key="GridCell.Tab.0.left" timestamp="1584113212919">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="669" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
-    <state width="669" height="737" key="GridCell.Tab.0.right" timestamp="1583503020826">
+    <state width="490" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584113212919" />
+    <state width="490" height="737" key="GridCell.Tab.0.right" timestamp="1584113212920">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="669" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583503020826" />
-    <state x="277" y="74" key="SettingsEditor" timestamp="1583652852291">
+    <state width="490" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584113212920" />
+    <state x="277" y="74" key="SettingsEditor" timestamp="1584107163805">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583652852291" />
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584107163805" />
     <state x="353" y="35" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583397974026">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="353" y="35" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1583397974026" />
-    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1582896499319">
+    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1584107161997">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864@0.0.1536.864" timestamp="1582896499319" />
+    <state x="455" y="278" width="705" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.864@0.0.1536.864" timestamp="1584107161997" />
     <state x="409" y="146" width="603" height="448" key="recent.locations.popup" timestamp="1582699087666">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
