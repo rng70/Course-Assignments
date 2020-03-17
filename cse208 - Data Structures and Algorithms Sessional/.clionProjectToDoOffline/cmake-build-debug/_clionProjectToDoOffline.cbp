@@ -159,6 +159,50 @@
 					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="mst">
+				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/mst.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 mst"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mst/fast">
+				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/mst.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 mst/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="apsp">
 				<Option output="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/apsp.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug"/>
@@ -225,6 +269,9 @@
 		</Unit>
 		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp">
 			<Option target="apsp"/>
+		</Unit>
+		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp">
+			<Option target="mst"/>
 		</Unit>
 		<Unit filename="D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

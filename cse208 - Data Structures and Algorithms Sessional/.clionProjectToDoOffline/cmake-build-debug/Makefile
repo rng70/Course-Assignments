@@ -149,6 +149,19 @@ dnf/fast:
 .PHONY : dnf/fast
 
 #=============================================================================
+# Target rules for targets named mst
+
+# Build rule for target.
+mst: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mst
+.PHONY : mst
+
+# fast build rule for target.
+mst/fast:
+	$(MAKE) -f CMakeFiles\mst.dir\build.make CMakeFiles/mst.dir/build
+.PHONY : mst/fast
+
+#=============================================================================
 # Target rules for targets named apsp
 
 # Build rule for target.
@@ -269,6 +282,33 @@ offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s:
 	$(MAKE) -f CMakeFiles\apsp.dir\build.make CMakeFiles/apsp.dir/offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s
 .PHONY : offline_and_reports/Offline-3-Assignment_on_APSP/apsp.cpp.s
 
+offline_and_reports/Offline-4-Assignment_on_MST/mst.obj: offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj
+
+.PHONY : offline_and_reports/Offline-4-Assignment_on_MST/mst.obj
+
+# target to build an object file
+offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj:
+	$(MAKE) -f CMakeFiles\mst.dir\build.make CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj
+.PHONY : offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj
+
+offline_and_reports/Offline-4-Assignment_on_MST/mst.i: offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.i
+
+.PHONY : offline_and_reports/Offline-4-Assignment_on_MST/mst.i
+
+# target to preprocess a source file
+offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.i:
+	$(MAKE) -f CMakeFiles\mst.dir\build.make CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.i
+.PHONY : offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.i
+
+offline_and_reports/Offline-4-Assignment_on_MST/mst.s: offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.s
+
+.PHONY : offline_and_reports/Offline-4-Assignment_on_MST/mst.s
+
+# target to generate assembly for a file
+offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.s:
+	$(MAKE) -f CMakeFiles\mst.dir\build.make CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.s
+.PHONY : offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -279,6 +319,7 @@ help:
 	@echo ... GraphAdjList
 	@echo ... GraphAdjMatrix
 	@echo ... dnf
+	@echo ... mst
 	@echo ... apsp
 	@echo ... rebuild_cache
 	@echo ... 47cbeeeb3140ddf9c01a69e49d1b5e31/GraphAdjList.obj
@@ -293,6 +334,9 @@ help:
 	@echo ... offline_and_reports/Offline-3-Assignment_on_APSP/apsp.obj
 	@echo ... offline_and_reports/Offline-3-Assignment_on_APSP/apsp.i
 	@echo ... offline_and_reports/Offline-3-Assignment_on_APSP/apsp.s
+	@echo ... offline_and_reports/Offline-4-Assignment_on_MST/mst.obj
+	@echo ... offline_and_reports/Offline-4-Assignment_on_MST/mst.i
+	@echo ... offline_and_reports/Offline-4-Assignment_on_MST/mst.s
 .PHONY : help
 
 

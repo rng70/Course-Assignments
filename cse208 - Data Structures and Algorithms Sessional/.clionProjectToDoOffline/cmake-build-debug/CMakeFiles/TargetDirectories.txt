@@ -2,5 +2,6 @@ D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Stru
 D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/GraphAdjList.dir
 D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/GraphAdjMatrix.dir
 D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/dnf.dir
+D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/mst.dir
 D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/apsp.dir
 D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug/CMakeFiles/rebuild_cache.dir
