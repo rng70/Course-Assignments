@@ -43,7 +43,7 @@ public:
     }
 
     void setVertices(int n) {
-        this->V = n + 1;
+        this->V = n;
         vert.resize(V);
         d.resize(V, INT_MAX);
         parentMatrix = new double *[V];
@@ -54,6 +54,10 @@ public:
         }
     }
 
+    int getVertices() {
+        return V;
+    }
+
     bool addEdge(int u, int v, double w) {
         if ((u >= 0 && u < V) && (v >= 0 && v < V)) {
             double W = getWeight(u, v);
@@ -61,6 +65,8 @@ public:
                 E.emplace_back(u, v, w); // passing three different integer and appending them as Edge object;
                 // Same as passing Edge(u, v, w) in push_back
                 // .i.e E.push_back(Edge(u, v, w)
+                if (!dir)
+                    E.emplace_back(v, u, w);
                 return true;
             }
         }
@@ -121,6 +127,21 @@ public:
         }
     }
 
+    void edgeToListW(vector<vector<pi > > &adjList) {
+        for (Edge e : E) {
+            adjList[(int) e.get()].pb({(int) e.get('w'), (int) e.get('v')});
+        }
+    }
+
+    void printAdjList(vector<vector<pi > > &adjLists) {
+        for (int i = 0; i < adjLists.size(); i++) {
+            cout << "Vertex [" << i << "] " << endl;
+            for (auto adj:adjLists[i]) {
+                cout << adj.first << " " << adj.second << endl;
+            }
+        }
+    }
+
     void printGraph() {
         ofstream out("output.txt", ios_base::app);
         if (f_n)
@@ -144,7 +165,6 @@ public:
                     if (f_n)
                         out << " --> ";
                 }
-
                 t++;
             }
             cout << endl;
@@ -152,21 +172,6 @@ public:
                 cout << endl;
         }
     }
-
-    void primAlgorithm(int n) {
-        vector<vector<pi > > adjLists(V);
-        edgeToList(adjLists);
-    }
-
-    void kruskalAlgorithm(int n) {
-        vi st(V, -1);
-        sort(E.begin(), E.end(), comp);
-        for (auto e:E) {
-            cout << e.get() << " " << e.get('v') << " " << e.get('w') << endl;
-        }
-        vi pt(V, -1);
-    }
-
 };
 
 void menu() {
@@ -174,8 +179,10 @@ void menu() {
             "2. Kruskal's Algorithm\n\t3. Print Graph\n\t4. Exit" << endl;
 }
 
+void primAlgorithm(Graph &g, int start);
+
 void consoleInput() {
-    Graph g(true);
+    Graph g(false);
 
     int N, M;
     cin >> N >> M;
@@ -193,9 +200,10 @@ void consoleInput() {
         cin >> choice;
 
         if (choice == 1) {
-            g.primAlgorithm(0);
+            primAlgorithm(g, 3);
         } else if (choice == 2) {
-            g.kruskalAlgorithm(3);
+            break;
+//            kruskalAlgorithm(g, 3);
         } else if (choice == 3) {
             g.printGraph();
         } else if (choice == 4) {
@@ -205,7 +213,7 @@ void consoleInput() {
 }
 
 void fileInput() {
-    Graph g(true, true);
+    Graph g(false, true);
     ifstream in("data.txt");
     ofstream out("output.txt", ios_base::app);
     out << "---------------Start---------------" << endl;
@@ -226,6 +234,60 @@ void fileInput() {
         in >> choice;
         break;
     }
+}
+
+void primAlgorithm(Graph &g, int start) {
+
+    // necessary variables
+    int min_cost = 0;
+    vi parent(g.getVertices(), -1);
+    bool visited[g.getVertices()];
+
+    // setting necessary values
+    memset(visited, false, sizeof(visited));
+
+    // declaring adjacency list
+    vector<vector<pi > > adjLists(g.getVertices());
+    g.edgeToList(adjLists);
+//    g.printAdjList(adjLists);
+
+    // declaring minimum priority queue
+    priority_queue<pi, vector<pi >, greater<> > pq;
+    pq.push({0, start});
+
+    // vector of nodes
+    vector<pi> path;
+    int prev = start;
+
+    while (!pq.empty()) {
+        pi p = pq.top();
+        pq.pop();
+        cout << "Min " << p.second << " " << p.first << endl;
+
+        start = p.second;
+        //checking cycle
+        if (visited[start])
+            continue;
+        min_cost += p.first;
+        visited[start] = true;
+        path.emplace_back(prev, start);
+        prev = start;
+
+
+        for (auto adjList:adjLists[start]) {
+            if (!visited[adjList.first]) {
+//                cout << adjList.second << "-w  v- " << adjList.first << " and parent is " << start << endl;
+                pq.push({adjList.second, adjList.first});
+//                parent[adjList.first] = start;
+            }
+        }
+
+    }
+    cout << "Minimum cost is " << min_cost << endl;
+    for (int i = 1; i < path.size(); i++) {
+        cout<< path[i].first << " " << path[i].second << endl;
+    }
+
 }
 
 int main() {

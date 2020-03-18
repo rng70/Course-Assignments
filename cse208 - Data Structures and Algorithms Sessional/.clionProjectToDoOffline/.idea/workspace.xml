@@ -3,10 +3,10 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="_clionProjectToDoOffline" targetName="apsp" />
-      <config projectName="_clionProjectToDoOffline" targetName="mst" />
       <config projectName="_clionProjectToDoOffline" targetName="dnf" />
-      <config projectName="_clionProjectToDoOffline" targetName="GraphAdjList" />
+      <config projectName="_clionProjectToDoOffline" targetName="mst" />
       <config projectName="_clionProjectToDoOffline" targetName="GraphAdjMatrix" />
+      <config projectName="_clionProjectToDoOffline" targetName="GraphAdjList" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -16,15 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_clionProjectToDoOffline.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_clionProjectToDoOffline.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +76,7 @@
       <recent name="D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\offline_and_reports\Offline-2- Assignment_on_SSSP" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.apsp">
+  <component name="RunManager" selected="CMake Application.mst">
     <configuration name="GraphAdjList" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_clionProjectToDoOffline" TARGET_NAME="GraphAdjList" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_clionProjectToDoOffline" RUN_TARGET_NAME="GraphAdjList">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -149,6 +142,7 @@
       <workItem from="1584110253369" duration="1641000" />
       <workItem from="1584111982336" duration="1374000" />
       <workItem from="1584463087715" duration="5597000" />
+      <workItem from="1584533422826" duration="7254000" />
     </task>
     <servers />
   </component>
@@ -167,22 +161,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="588" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582910717423" />
-    <state width="490" height="737" key="GridCell.Tab.0.bottom" timestamp="1584113212920">
+    <state width="498" height="737" key="GridCell.Tab.0.bottom" timestamp="1584540044921">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="490" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584113212920" />
-    <state width="490" height="737" key="GridCell.Tab.0.center" timestamp="1584113212920">
+    <state width="498" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584540044921" />
+    <state width="498" height="737" key="GridCell.Tab.0.center" timestamp="1584540044921">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="490" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584113212920" />
-    <state width="490" height="737" key="GridCell.Tab.0.left" timestamp="1584113212919">
+    <state width="498" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584540044921" />
+    <state width="498" height="737" key="GridCell.Tab.0.left" timestamp="1584540044921">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="490" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584113212919" />
-    <state width="490" height="737" key="GridCell.Tab.0.right" timestamp="1584113212920">
+    <state width="498" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584540044921" />
+    <state width="498" height="737" key="GridCell.Tab.0.right" timestamp="1584540044921">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="490" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584113212920" />
+    <state width="498" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584540044921" />
     <state x="277" y="74" key="SettingsEditor" timestamp="1584107163805">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -199,6 +193,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="409" y="146" width="603" height="448" key="recent.locations.popup/0.0.1536.864@0.0.1536.864" timestamp="1582699087666" />
+    <state x="41" y="198" key="run.anything.popup" timestamp="1584536163635">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="41" y="198" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1584536163635" />
     <state x="46" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1583742174221">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
