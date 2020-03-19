@@ -5,6 +5,7 @@
 #define pi pair<int, int>
 #define pb push_back
 #define FOR(i, a) for(int i=0;i<a;i++)
+#define all(v) v.begin(),v.end()
 using namespace std;
 
 class Edge {
@@ -17,10 +18,6 @@ public:
         return ((ch == 'u') ? (double) u : ((ch == 'v') ? (double) v : w));
     }
 };
-
-int comp(Edge a, Edge b) {
-    return a.get('w') > b.get('w');
-}
 
 class Graph {
     int V;
@@ -56,6 +53,10 @@ public:
 
     int getVertices() {
         return V;
+    }
+
+    vector<Edge> getEdges() {
+        return E;
     }
 
     bool addEdge(int u, int v, double w) {
@@ -181,6 +182,14 @@ void menu() {
 
 void primAlgorithm(Graph &g, int start);
 
+int comp(Edge a, Edge b) {
+    return a.get('w') > b.get('w');
+}
+
+void kruskalAlgorithm(Graph &g) {
+    sort(all(g.getEdges()), comp);
+}
+
 void consoleInput() {
     Graph g(false);
 
@@ -237,6 +246,8 @@ void fileInput() {
 }
 
 void primAlgorithm(Graph &g, int start) {
+    // storing root node
+    int root = start;
 
     // necessary variables
     int min_cost = 0;
@@ -252,40 +263,36 @@ void primAlgorithm(Graph &g, int start) {
 //    g.printAdjList(adjLists);
 
     // declaring minimum priority queue
-    priority_queue<pi, vector<pi >, greater<> > pq;
-    pq.push({0, start});
+    priority_queue<pair<int, pi >, vector<pair<int, pi > >, greater<> > pq;
+    pq.push({0, {start, start}});
 
-    // vector of nodes
-    vector<pi> path;
-    int prev = start;
+    // path store
+    vector<pi > path;
 
     while (!pq.empty()) {
-        pi p = pq.top();
+        pair<int, pi > p = pq.top();
         pq.pop();
-        cout << "Min " << p.second << " " << p.first << endl;
 
-        start = p.second;
+        start = p.second.first;
         //checking cycle
         if (visited[start])
             continue;
         min_cost += p.first;
         visited[start] = true;
-        path.emplace_back(prev, start);
-        prev = start;
+        path.push_back(p.second);
 
 
         for (auto adjList:adjLists[start]) {
             if (!visited[adjList.first]) {
-//                cout << adjList.second << "-w  v- " << adjList.first << " and parent is " << start << endl;
-                pq.push({adjList.second, adjList.first});
-//                parent[adjList.first] = start;
+                pq.push({adjList.second, {adjList.first, start}});
             }
         }
 
     }
-    cout << "Minimum cost is " << min_cost << endl;
+    cout << "Minimum cost is " << min_cost << endl << "Prim's algorithm:" << endl;
+    cout << "Root node = " << root << endl;
     for (int i = 1; i < path.size(); i++) {
-        cout<< path[i].first << " " << path[i].second << endl;
+        cout << path[i].first << " " << path[i].second << endl;
     }
 
 }
