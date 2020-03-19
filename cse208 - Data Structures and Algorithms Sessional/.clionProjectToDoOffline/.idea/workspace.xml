@@ -15,11 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/mst.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mst.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +140,7 @@
       <workItem from="1584111982336" duration="1374000" />
       <workItem from="1584463087715" duration="5597000" />
       <workItem from="1584533422826" duration="7254000" />
-      <workItem from="1584610945373" duration="3164000" />
+      <workItem from="1584610945373" duration="3165000" />
     </task>
     <servers />
   </component>
