@@ -128,12 +128,6 @@ public:
         }
     }
 
-    void edgeToListW(vector<vector<pi > > &adjList) {
-        for (Edge e : E) {
-            adjList[(int) e.get()].pb({(int) e.get('w'), (int) e.get('v')});
-        }
-    }
-
     void printAdjList(vector<vector<pi > > &adjLists) {
         for (int i = 0; i < adjLists.size(); i++) {
             cout << "Vertex [" << i << "] " << endl;
