@@ -16,7 +16,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/mst.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mst.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +153,7 @@
       <workItem from="1584723680485" duration="558000" />
       <workItem from="1585352963135" duration="48000" />
       <workItem from="1585353219035" duration="607000" />
+      <workItem from="1585589862116" duration="14285000" />
     </task>
     <servers />
   </component>
@@ -164,22 +172,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="588" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585353889595" />
-    <state width="498" height="737" key="GridCell.Tab.0.bottom" timestamp="1584611739979">
+    <state width="580" height="713" key="GridCell.Tab.0.bottom" timestamp="1585667718971">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="498" height="737" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584611739979" />
-    <state width="498" height="737" key="GridCell.Tab.0.center" timestamp="1584611739979">
+    <state width="580" height="713" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585667718971" />
+    <state width="580" height="713" key="GridCell.Tab.0.center" timestamp="1585667718971">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="498" height="737" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584611739979" />
-    <state width="498" height="737" key="GridCell.Tab.0.left" timestamp="1584611739979">
+    <state width="580" height="713" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585667718971" />
+    <state width="580" height="713" key="GridCell.Tab.0.left" timestamp="1585667718971">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="498" height="737" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584611739979" />
-    <state width="498" height="737" key="GridCell.Tab.0.right" timestamp="1584611739979">
+    <state width="580" height="713" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585667718971" />
+    <state width="580" height="713" key="GridCell.Tab.0.right" timestamp="1585667718971">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="498" height="737" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584611739979" />
+    <state width="580" height="713" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585667718971" />
     <state x="277" y="74" key="SettingsEditor" timestamp="1584107163805">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -196,10 +204,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="409" y="146" width="603" height="448" key="recent.locations.popup/0.0.1536.864@0.0.1536.864" timestamp="1582699087666" />
-    <state x="41" y="198" key="run.anything.popup" timestamp="1584611097893">
+    <state x="41" y="198" width="672" height="677" key="run.anything.popup" timestamp="1585667791994">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="41" y="198" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1584611097893" />
+    <state x="41" y="198" width="672" height="677" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1585667791994" />
     <state x="46" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1583742174221">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

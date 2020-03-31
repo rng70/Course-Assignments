@@ -9,11 +9,10 @@
 using namespace std;
 
 ifstream in(
-        R"(D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\offline_and_reports\Offline-4-Assignment_on_MST\data.txt)");
+        R"(data.txt)");
 
 ofstream out(
-        R"(D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline\offline_and_reports\Offline-4-Assignment_on_MST\output.txt)",
-        ios_base::app);
+        R"(output.txt)", ios_base::app);
 
 class Edge {
     int u, v;
