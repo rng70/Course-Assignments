@@ -16,14 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a422bdc1-bacd-42ec-bf8a-be4538adef59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mst.dir/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/mst.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mst.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/offline_and_reports/Offline-4-Assignment_on_MST/mst.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +147,8 @@
       <workItem from="1585352963135" duration="48000" />
       <workItem from="1585353219035" duration="607000" />
       <workItem from="1585589862116" duration="14285000" />
+      <workItem from="1585676671283" duration="87000" />
+      <workItem from="1585676806968" duration="49000" />
     </task>
     <servers />
   </component>
@@ -168,6 +163,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1583469388916" />
+    <state x="449" y="160" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585676758858">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="449" y="160" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1585676758858" />
     <state x="588" y="187" key="FileChooserDialogImpl" timestamp="1585353889595">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
