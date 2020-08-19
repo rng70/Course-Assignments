@@ -1,3 +1,0 @@
-I:\JetBrains\ToolBox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\mst.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe cr CMakeFiles\mst.dir/objects.a @CMakeFiles\mst.dir\objects1.rsp
-C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe -g   -Wl,--whole-archive CMakeFiles\mst.dir/objects.a -Wl,--no-whole-archive  -o mst.exe -Wl,--out-implib,libmst.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\mst.dir\linklibs.rsp

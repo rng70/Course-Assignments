@@ -1,3 +1,0 @@
-I:\JetBrains\ToolBox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\dnf.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe cr CMakeFiles\dnf.dir/objects.a @CMakeFiles\dnf.dir\objects1.rsp
-C:\msys64\mingw64\bin\x86_64-w64-mingw32-g++.exe -g   -Wl,--whole-archive CMakeFiles\dnf.dir/objects.a -Wl,--no-whole-archive  -o dnf.exe -Wl,--out-implib,libdnf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dnf.dir\linklibs.rsp

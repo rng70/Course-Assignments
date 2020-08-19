@@ -1,4 +1,0 @@
-I:\JetBrains\ToolBox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/msys64/mingw64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/msys64/mingw64/bin/x86_64-w64-mingw32-gcc-9.2.0.exe -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/x86_64-w64-mingw32-g++.exe -G "CodeBlocks - MinGW Makefiles" "D:\.assignments-And-Offlines-on-Data-Structure-and-Algorithms\cse208 - Data Structures and Algorithms Sessional\.clionProjectToDoOffline"
--- Configuring done
--- Generating done
--- Build files have been written to: D:/.assignments-And-Offlines-on-Data-Structure-and-Algorithms/cse208 - Data Structures and Algorithms Sessional/.clionProjectToDoOffline/cmake-build-debug
