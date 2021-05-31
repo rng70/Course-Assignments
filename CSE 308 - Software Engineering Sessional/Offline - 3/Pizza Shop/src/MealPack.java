@@ -24,7 +24,7 @@ public class MealPack {
             }
         }
     }
-    public void showMeal(int param){
+    public void showPrice(int param){
         if(param > 0 && param < 3){
             meal.ShowMeal();
         }else if(param > 2 && param < 5){

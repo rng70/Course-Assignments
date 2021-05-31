@@ -17,6 +17,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         choice = scanner.nextInt();
         MealPack mealPack = new MealPack(choice);
-        mealPack.showMeal(choice);
+        mealPack.showPrice(choice);
     }
 }
