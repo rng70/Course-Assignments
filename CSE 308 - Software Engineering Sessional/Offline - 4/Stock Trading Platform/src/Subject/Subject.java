@@ -1,10 +1,9 @@
 package Subject;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
 public interface Subject {
-    Map<String, Stocks> allStocks = new HashMap<String, Stocks>();
+    ArrayList<Stocks> allStocks = new ArrayList<Stocks>();
 
     /* ********************************************** */
     /*                                                */
@@ -23,7 +22,7 @@ public interface Subject {
     /*    C is given for changing the stock count     */
     /*                                                */
     /* ********************************************** */
-    void triggerOperation(char triggerMode);
+    void triggerOperation(char triggerMode, String stockName, double stockPriceOrCount);
 
     /* ********************************************** */
     /*                                                */

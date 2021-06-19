@@ -2,12 +2,24 @@ package Subject;
 
 import java.io.*;
 import java.io.FileNotFoundException;
+import java.net.ServerSocket;
 import java.util.Scanner;
-import Subject.Stocks;
 
 public class Server implements Subject{
     Stocks stocks;
+    ServerSocket serverSocket;
 
+    public static void main(String[] args) {
+        new Server();
+    }
+    public Server(){
+        try {
+            serverSocket = new ServerSocket(3333);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+    }
     @Override
     public void readStocks(){
         String filename = "./input.txt";
@@ -19,9 +31,8 @@ public class Server implements Subject{
             while(scanner.hasNextLine()){
                 String[] line = scanner.nextLine().split(" ");
 
-                stocks = new Stocks(Integer.parseInt(line[1]), Double.parseDouble(line[2]));
-                allStocks.put(line[0], stocks);
-
+                stocks = new Stocks(line[0], Integer.parseInt(line[1]), Double.parseDouble(line[2]));
+                allStocks.add(stocks);
             }
 
         }catch (FileNotFoundException e){
@@ -30,13 +41,19 @@ public class Server implements Subject{
         }
     }
     @Override
-    public void triggerOperation(char triggerMode){
+    public void triggerOperation(char triggerMode, String stockName, double stockPriceOrCount){
         if (triggerMode == 'I' || triggerMode == 'i') {
-            System.out.println("Found I");
+            for(int i=0;i<allStocks.size();i++){
+                allStocks.get(i).setStockPrice(allStocks.get(i).getStockPrice() + stockPriceOrCount);
+            }
         }else if(triggerMode == 'D' || triggerMode == 'd'){
-            System.out.println("Found D");
+            for(int i=0;i<allStocks.size();i++){
+                allStocks.get(i).setStockPrice(allStocks.get(i).getStockPrice() - stockPriceOrCount);
+            }
         }else if(triggerMode == 'C' || triggerMode == 'c'){
-            System.out.println("Found C");
+            for(int i=0;i<allStocks.size();i++){
+                allStocks.get(i).setStockCount((int) stockPriceOrCount);
+            }
         }else{
             System.out.println("Invalid Operation");
         }
@@ -44,6 +61,5 @@ public class Server implements Subject{
 
     @Override
     public void sendStockToAll(){
-
     }
 }

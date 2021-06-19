@@ -2,9 +2,11 @@ package Subject;
 
 public class Stocks {
     private int stockCount;
+    private String stockName;
     private double stockPrice;
 
-    public Stocks(int stockCount, double stockPrice){
+    public Stocks(String stockName, int stockCount, double stockPrice){
+        this.stockName = stockName;
         this.stockCount = stockCount;
         this.stockPrice = stockPrice;
     }
