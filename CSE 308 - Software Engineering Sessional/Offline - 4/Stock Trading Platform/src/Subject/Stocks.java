@@ -2,7 +2,7 @@ package Subject;
 
 public class Stocks {
     private int stockCount;
-    private String stockName;
+    private final String stockName;
     private double stockPrice;
 
     public Stocks(String stockName, int stockCount, double stockPrice){
@@ -24,5 +24,8 @@ public class Stocks {
     }
     public void setStockPrice(double stockPrice){
         this.stockPrice = stockPrice;
+    }
+    public String getStockName(){
+        return this.stockName;
     }
 }

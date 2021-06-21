@@ -12,7 +12,7 @@ public interface Subject {
     /*     all the users when they first login        */
     /*                                                */
     /* ********************************************** */
-    void readStocks();
+//    void readStocks();
 
     /* ********************************************** */
     /*                                                */
