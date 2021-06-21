@@ -4,6 +4,7 @@ import arafat.rng70.Mediator.Mediator;
 
 public class JRTA extends Providers{
     public JRTA(Mediator mediator){
-        super(mediator);
+        super(mediator, "JRTA");
+        System.out.println("\tJTRA Initialized");
     }
 }

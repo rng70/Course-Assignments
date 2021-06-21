@@ -4,6 +4,7 @@ import arafat.rng70.Mediator.Mediator;
 
 public class JTRC extends Providers{
     public JTRC(Mediator mediator){
-        super(mediator);
+        super(mediator, "JTRC");
+        System.out.println("\tJTRC Initialized");
     }
 }
