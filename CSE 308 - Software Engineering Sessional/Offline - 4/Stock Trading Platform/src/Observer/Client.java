@@ -7,23 +7,26 @@ import java.util.Scanner;
 
 public class Client {
     ClientConnection clientConnection;
+
     public static void main(String[] args) {
         new Client();
     }
+
     public Client(){
         try {
              Socket socket = new Socket("localhost", 3333);
 
              clientConnection = new ClientConnection(socket, this);
              clientConnection.start();
-            listenFotInput();
+             listenForInput();
         } catch(UnknownHostException e){
             e.printStackTrace();
         } catch(IOException e){
             e.printStackTrace();
         }
     }
-    public void listenFotInput(){
+
+    public void listenForInput(){
         Scanner console = new Scanner(System.in);
 
         while(true){

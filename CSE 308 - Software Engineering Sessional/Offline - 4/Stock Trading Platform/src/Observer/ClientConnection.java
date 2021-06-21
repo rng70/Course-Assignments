@@ -15,6 +15,7 @@ public class ClientConnection extends Thread{
     public ClientConnection(Socket socket, Client client){
         this.socket = socket;
     }
+
     public void sendStringToServer(String text){
         try {
             dataOutputStream.writeUTF(text);

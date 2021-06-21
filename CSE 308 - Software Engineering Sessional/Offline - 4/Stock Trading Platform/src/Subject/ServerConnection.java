@@ -12,14 +12,27 @@ public class ServerConnection extends Thread{
     DataInputStream dataInputStream;
     DataOutputStream dataOutputStream;
     boolean shouldRun = true;
-    ArrayList<String> stockName = new ArrayList<>();
-    ArrayList<ServerConnection> serverConnectionArrayList = new ArrayList<>();
+    public static ArrayList<String> stockName = new ArrayList<>();
+    public static ArrayList<ServerConnection> serverConnectionArrayList = new ArrayList<>();
 
+    /* ********************************************** */
+    /*                                                */
+    /*         Main server connection thread          */
+    /*                                                */
+    /* ********************************************** */
     public ServerConnection(Socket socket, Server server){
         super("Server Connection Thread");
         this.socket = socket;
         this.server = server;
     }
+
+    /* ********************************************** */
+    /*                                                */
+    /* After every trigger operation a message to the */
+    /*  Subscriber is needed to be sent which is done */
+    /*                 by this method                 */
+    /*                                                */
+    /* ********************************************** */
     public void sendStocksToAll(ArrayList<Stocks> stocks){
         try {
             dataOutputStream = new DataOutputStream(socket.getOutputStream());
@@ -37,8 +50,23 @@ public class ServerConnection extends Thread{
             }
         }
     }
+
+    /* ********************************************** */
+    /*                                                */
+    /*   Method to get socket fo server connections   */
+    /*                                                */
+    /* ********************************************** */
+    public Socket getSocket(){
+        return this.socket;
+    }
+
+    /* ********************************************** */
+    /*                                                */
+    /*  The process of Subscription is handled here   */
+    /*                                                */
+    /* ********************************************** */
     public void sendStringToClient(ServerConnection sc, String text){
-        String outputText = "Output";
+        String outputText = "";
         boolean isSubscribed = false;
         String[] input = text.split(" ");
         if(input[0].equalsIgnoreCase("s")){
@@ -73,12 +101,6 @@ public class ServerConnection extends Thread{
             dataOutputStream.flush();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-    public void sendStringToAllClient(ServerConnection sc, String text){
-        for(int i=0;i<server.connections.size();i++){
-            ServerConnection sC = server.connections.get(i);
-//            sC.sendStringToClient(text);
         }
     }
 
