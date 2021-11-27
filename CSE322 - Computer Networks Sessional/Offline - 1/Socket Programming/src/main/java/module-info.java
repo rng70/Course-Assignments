@@ -7,4 +7,6 @@ module com.example.socketprogramming {
 
     opens rng70.socketprogramming to javafx.fxml;
     exports rng70.socketprogramming;
+
+    requires java.desktop;
 }

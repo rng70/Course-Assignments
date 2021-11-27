@@ -70,7 +70,7 @@
                         <id>default-cli</id>
                         <configuration>
 <!--                            com.example.socketprogramming/-->
-                            <mainClass>com.example.socketprogramming/rng70.socketprogramming.HelloApplication
+                            <mainClass>com.example.socketprogramming/rng70.socketprogramming.ClientGUIMainThread
                             </mainClass>
                         </configuration>
                     </execution>

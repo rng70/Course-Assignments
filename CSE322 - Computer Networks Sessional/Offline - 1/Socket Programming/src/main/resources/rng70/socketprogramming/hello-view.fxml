@@ -8,11 +8,12 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="925.0" prefWidth="1285.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rng70.socketprogramming.HelloController">
+<VBox alignment="CENTER" prefHeight="925.0" prefWidth="1285.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rng70.socketprogramming.ClientGUIController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -30,36 +31,21 @@
                         <font>
                            <Font size="20.0" />
                         </font></Label>
-                     <Button fx:id="serverConnectButton" layoutX="535.0" layoutY="179.0" mnemonicParsing="false" onAction="#ActionToConnectServer" prefHeight="30.0" prefWidth="262.0" text="Connect To Server">
+                     <Button fx:id="serverConnectButton" layoutX="403.0" layoutY="176.0" mnemonicParsing="false" onAction="#ActionToConnectServer" prefHeight="30.0" prefWidth="265.0" text="Connect To Server">
                         <font>
                            <Font size="18.0" />
                         </font></Button>
-                     <TextArea fx:id="activeList" layoutX="115.0" layoutY="300.0" prefHeight="505.0" prefWidth="345.0" promptText="Active Student List" wrapText="true">
-                        <font>
-                           <Font size="16.0" />
-                        </font>
-                     </TextArea>
-                     <TextArea fx:id="allList" layoutX="829.0" layoutY="300.0" prefHeight="505.0" prefWidth="345.0" promptText="All Student List" wrapText="true">
-                        <font>
-                           <Font size="16.0" />
-                        </font>
-                     </TextArea>
-                     <Label layoutX="145.0" layoutY="263.0" text="Currently Active Student List">
+                     <Label layoutX="96.0" layoutY="257.0" text="Student List">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <Label layoutX="764.0" layoutY="263.0" text="All Student List (are/were) Connected to Server">
-                        <font>
-                           <Font size="20.0" />
-                        </font>
-                     </Label>
-                     <Button fx:id="activeStudentList" layoutX="535.0" layoutY="497.0" mnemonicParsing="false" onAction="#ActionToShowActiveStudentList" text="Show active student list">
+                     <Button fx:id="activeStudentList" layoutX="797.0" layoutY="459.0" mnemonicParsing="false" onAction="#ActionToShowActiveStudentList" prefWidth="265.0" text="Show active student list">
                         <font>
                            <Font size="18.0" />
                         </font>
                      </Button>
-                     <Button fx:id="AllStudentList" layoutX="549.0" layoutY="596.0" mnemonicParsing="false" onAction="#ActionToShowAllStudentList" text="Show all student list">
+                     <Button fx:id="AllStudentList" layoutX="797.0" layoutY="551.0" mnemonicParsing="false" onAction="#ActionToShowAllStudentList" prefWidth="265.0" text="Show all student list">
                         <font>
                            <Font size="18.0" />
                         </font>
@@ -74,6 +60,12 @@
                            <Font size="16.0" />
                         </font>
                      </TextField>
+                     <TreeView fx:id="listOfStudent" layoutX="266.0" layoutY="257.0" prefHeight="588.0" prefWidth="402.0" />
+                     <Button layoutX="740.0" layoutY="176.0" mnemonicParsing="false" onAction="#ActionToLogOut" prefHeight="30.0" prefWidth="265.0" text="LogOut">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Button>
                   </children>
                </AnchorPane>
          </content>
@@ -82,91 +74,102 @@
            <content>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <children>
-                     <TextField layoutX="457.0" layoutY="23.0" prefHeight="28.0" prefWidth="293.0" promptText="Enter Student ID">
+                     <TextField fx:id="idToSeeFiles" layoutX="372.0" layoutY="23.0" prefHeight="30.0" prefWidth="437.0" promptText="Enter Student ID">
                         <font>
                            <Font size="16.0" />
                         </font>
                      </TextField>
-                     <Label layoutX="240.0" layoutY="24.0" prefHeight="18.0" prefWidth="246.0" text="Enter Student ID:">
+                     <Label layoutX="184.0" layoutY="26.0" prefHeight="25.0" prefWidth="175.0" text="Enter Student ID:">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <RadioButton layoutX="802.0" layoutY="22.0" mnemonicParsing="false" text="My Files">
+                     <RadioButton fx:id="myIDToSeeFiles" layoutX="847.0" layoutY="25.0" mnemonicParsing="false" selected="true" text="Include My Files" textAlignment="JUSTIFY" wrapText="true">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </RadioButton>
-                     <Button fx:id="showFileButton" layoutX="569.0" layoutY="120.0" mnemonicParsing="false" onAction="#ActionToShowFiles" prefHeight="30.0" prefWidth="125.0" text="Show Files">
+                     <Button fx:id="showFileButton" layoutX="523.0" layoutY="108.0" mnemonicParsing="false" onAction="#ActionToShowFiles" prefHeight="30.0" prefWidth="165.0" text="Show Files">
                         <font>
                            <Font size="18.0" />
                         </font>
                      </Button>
-                     <TextArea fx:id="publicFiles" layoutX="240.0" layoutY="242.0" prefHeight="213.0" prefWidth="325.0" promptText="Public files list" wrapText="true">
-                        <font>
-                           <Font size="16.0" />
-                        </font>
-                     </TextArea>
-                     <TextArea fx:id="privateFiles" layoutX="760.0" layoutY="247.0" prefHeight="205.0" prefWidth="325.0" promptText="Private files list" wrapText="true">
-                        <font>
-                           <Font size="16.0" />
-                        </font>
-                     </TextArea>
-                     <Label layoutX="346.0" layoutY="199.0" text="Public Files">
+                     <Label layoutX="345.0" layoutY="124.0" text="Files:">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <Label layoutX="725.0" layoutY="199.0" text="Private Files(Shown to the person only)">
-                        <font>
-                           <Font size="20.0" />
-                        </font>
-                     </Label>
-                     <RadioButton layoutX="523.0" layoutY="72.0" mnemonicParsing="false" text="Public">
+                     <RadioButton fx:id="publicRB" layoutX="523.0" layoutY="72.0" mnemonicParsing="false" text="Public">
                         <font>
                            <Font size="16.0" />
                         </font>
                      </RadioButton>
-                     <RadioButton layoutX="642.0" layoutY="72.0" mnemonicParsing="false" text="Private">
+                     <RadioButton fx:id="privateRB" layoutX="642.0" layoutY="72.0" mnemonicParsing="false" text="Private">
                         <font>
                            <Font size="16.0" />
                         </font>
                      </RadioButton>
-                     <Label layoutX="240.0" layoutY="714.0" prefHeight="25.0" prefWidth="133.0" text="Request file:">
+                     <Label layoutX="241.0" layoutY="731.0" prefHeight="25.0" prefWidth="133.0" text="Request file:">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <TextField fx:id="requestFileText" layoutX="375.0" layoutY="714.0" prefHeight="26.0" prefWidth="436.0" promptText="Enter file name">
+                     <TextField fx:id="requestFileText" layoutX="372.0" layoutY="728.0" prefHeight="26.0" prefWidth="436.0" promptText="Enter file name">
                         <font>
                            <Font size="16.0" />
                         </font>
                      </TextField>
-                     <Button fx:id="requestButton" layoutX="847.0" layoutY="712.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Request">
+                     <Button fx:id="requestButton" layoutX="847.0" layoutY="727.0" mnemonicParsing="false" onAction="#requestForFile" prefHeight="30.0" prefWidth="165.0" text="Request">
                         <font>
                            <Font size="18.0" />
                         </font>
                      </Button>
-                     <Label layoutX="240.0" layoutY="509.0" prefHeight="25.0" prefWidth="135.0" text="Upload file:">
+                     <Label layoutX="240.0" layoutY="607.0" prefHeight="25.0" prefWidth="135.0" text="Upload file:">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <TextField fx:id="uploadFileName" layoutX="373.0" layoutY="509.0" prefHeight="26.0" prefWidth="436.0" promptText="Enter full path of the file">
+                     <TextField fx:id="uploadFileName" layoutX="373.0" layoutY="604.0" prefHeight="26.0" prefWidth="436.0" promptText="Enter full path of the file">
                         <font>
                            <Font size="16.0" />
                         </font>
                      </TextField>
-                     <Button fx:id="chooseFile" layoutX="847.0" layoutY="507.0" mnemonicParsing="false" onAction="#ActionToChooseFileToUpload" prefHeight="30.0" prefWidth="135.0" text="Choose File">
+                     <Button fx:id="chooseFile" layoutX="847.0" layoutY="602.0" mnemonicParsing="false" onAction="#ActionToChooseFileToUpload" prefHeight="30.0" prefWidth="165.0" text="Choose File">
                         <font>
                            <Font size="18.0" />
                         </font>
                      </Button>
-                     <Button fx:id="uploadButton" layoutX="565.0" layoutY="580.0" mnemonicParsing="false" onAction="#ActionToUploadFiles" prefHeight="30.0" prefWidth="110.0" text="Upload">
+                     <Button fx:id="uploadButton" layoutX="1036.0" layoutY="602.0" mnemonicParsing="false" onAction="#ActionToUploadFiles" prefHeight="30.0" prefWidth="165.0" text="Upload">
                         <font>
                            <Font size="18.0" />
                         </font>
                      </Button>
+                     <Label layoutX="240.0" layoutY="794.0" text="Download:">
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="downloadFilePath" layoutX="372.0" layoutY="792.0" prefHeight="26.0" prefWidth="436.0" promptText="Enter full path of a file (.e.g 170570/file.txt)">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </TextField>
+                     <Button fx:id="downloadButton" layoutX="847.0" layoutY="790.0" mnemonicParsing="false" onAction="#ActionToDownloadFiles" prefHeight="30.0" prefWidth="165.0" text="Start Download">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Button>
+                     <TreeView fx:id="treeViewFiles" editable="true" layoutX="373.0" layoutY="167.0" prefHeight="423.0" prefWidth="434.0" />
+                     <TextField fx:id="uploadMode" layoutX="601.0" layoutY="663.0" prefHeight="33.0" prefWidth="254.0" promptText="(public/private/requestID)">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </TextField>
+                     <Label layoutX="242.0" layoutY="667.0" text="ModeIPrivate/Public/Requested)">
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Label>
                   </children>
                </AnchorPane>
            </content>
@@ -184,7 +187,7 @@
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <Button fx:id="notificationButton" layoutX="568.0" layoutY="529.0" mnemonicParsing="false" onAction="#notificationShowButton" prefHeight="30.0" prefWidth="110.0" text="Show All">
+                     <Button fx:id="notificationButton" layoutX="568.0" layoutY="529.0" mnemonicParsing="false" onAction="#notificationShowButton" prefHeight="30.0" prefWidth="165.0" text="Show All">
                         <font>
                            <Font size="18.0" />
                         </font></Button>
@@ -192,18 +195,6 @@
                </AnchorPane>
          </content>
        </Tab>
-         <Tab text="Errors">
-           <content>
-             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                  <children>
-                     <TextArea fx:id="errors" layoutX="14.0" layoutY="14.0" prefHeight="804.0" prefWidth="1218.0" promptText="Errors" wrapText="true">
-                        <font>
-                           <Font size="16.0" />
-                        </font></TextArea>
-                  </children>
-               </AnchorPane>
-           </content>
-         </Tab>
      </tabs>
    </TabPane>
 </VBox>
