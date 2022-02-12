@@ -25,21 +25,25 @@ public class Main {
             board[r][c] = -1.0;
         }
 
+        /**
+         * @brief initial probability of each cell of the board
+         * will be same as 1/(n*m-k) where k is the cell with
+         * obstacle where Casper cannot stay
+         */
+        model.SetInitialBoard(n*m-k);
+
         String s;
         while(true){
             s = scanner.nextLine();
-            if(s.charAt(0)=='Q'){
+            if(s.charAt(0)=='Q' || s.charAt(0)=='q'){
                 break;
             }
-            if(s.charAt(0)=='C'){
+            if(s.charAt(0)=='C' || s.charAt(0)=='c'){
                 model.queryCasperPosition();
+            }else if(s.charAt(0)=='R' || s.charAt(0)=='r'){
+                String[] arrOfStr = s.split(" ");
+                model.ProcessModel(Integer.parseInt(arrOfStr[1]), Integer.parseInt(arrOfStr[2]), Integer.parseInt(arrOfStr[3]));
             }
         }
-
-//        int age = 14;
-//        assert age <= 18 : "Cannot Vote";
-//        System.out.println("The voter's age is " + age);
-
-
     }
 }
